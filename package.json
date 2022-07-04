@@ -1,0 +1,31 @@
+{
+  "name": "threadripper",
+  "version": "1.0.0",
+  "description": "Basic node.js app to scrape strings from a public webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-modules index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/extrapreneur/threadripper.git"
+  },
+  "keywords": [
+    "scraper"
+  ],
+  "author": "Erik Emmerfors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/extrapreneur/threadripper/issues"
+  },
+  "homepage": "https://github.com/extrapreneur/threadripper#readme",
+  "type": "module",
+  "dependencies": {
+    "mdast-zone": "^5.1.0",
+    "puppeteer": "^15.3.0",
+    "remark": "^14.0.2",
+    "rss-parser": "^3.12.0",
+    "to-vfile": "^7.2.3"
+  }
+}
