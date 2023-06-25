@@ -42,11 +42,18 @@ const getAboutUsString = await puppeteer.launch().then(async (browser) => {
   await p.setViewport({ width: 1000, height: 500 });
   await p.goto("https://www.extrapreneur.se/en/about-us");
 
+  // const result = await p.evaluate(
+  //   () =>
+  //     document.querySelector("#block-a69218aa3038e836d047 > div > p").innerHTML
+  // );
+
   const result = await p.evaluate(
     () =>
-      document.querySelector("#block-a69218aa3038e836d047 > div > p").innerHTML
+      document.querySelector(
+        "#block-a69218aa3038e836d047 > div > div > p:nth-child(2)"
+      ).innerHTML
   );
-
+  
   /*   await p.goto("https://www.extrapreneur.se/blog");
 
   const blogPostLinks = await p.evaluate(() =>
