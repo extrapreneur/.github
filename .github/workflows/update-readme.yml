@@ -6,8 +6,8 @@ on:
   # can be triggered manually
   workflow_dispatch:
   # on a schedule at minute 6 and 36 of each hour
-  #schedule:
-  #  - cron: '6,36 * * * *'
+  schedule:
+    - cron: '6,36 * * * *'
     
 jobs:
   build:
