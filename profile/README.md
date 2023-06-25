@@ -13,7 +13,7 @@
 
 <!--about start-->
 
-Our name reflects our identity and what customers can expect from us. \<strong>Extrapreneur is a consultancy of IT professionals\</strong> on a journey to contribute to the development of both our customers and colleagues, and we show this through our drive to make things happen. We have embarked on a journey to impress customers and create proud employees.
+Our name reflects our identity and what customers can expect from us. <strong>Extrapreneur is a consultancy of IT professionals</strong> on a journey to contribute to the development of both our customers and colleagues, and we show this through our drive to make things happen. We have embarked on a journey to impress customers and create proud employees.
 
 <!--about end-->
 
@@ -21,14 +21,14 @@ Our name reflects our identity and what customers can expect from us. \<strong>E
 
 <!-- blog start -->
 
-* [How to apply my verification knowledge in Automotive industry?](https://www.extrapreneur.se/blog/how-to-apply-my-verification-knowledge-in-automotive-industry)<br/>
+*   [Mats Wåhlander: Transforming the World One Idea at a Time](https://www.extrapreneur.se/blog/mats-wahlander)<br/>
 
-* [Future of driving?](https://www.extrapreneur.se/blog/future-of-driving)<br/>
+*   [Jakob Thomasson om ChatGPT inom frontend-utveckling](https://www.extrapreneur.se/blog/jakob-om-chatgpt)<br/>
 
-* [Experience: Evolution of a CAB forum](https://www.extrapreneur.se/blog/experience-evolution-of-a-cab-forum)<br/>
+*   [GitHub vs Azure DevOps](https://www.extrapreneur.se/blog/githubvsazure)<br/>
 
-* [Hur kan du förbättra din kommunikationsförmåga?](https://www.extrapreneur.se/blog/hur-kan-du-frbttra-din-kommunikationsfrmga)<br/>
+*   [Från idé till app ](https://www.extrapreneur.se/blog/c33c2nha7wz3keilktq0u1vuta6cem)<br/>
 
-* [Datastrategi del 2: Bästa BI-organisationen](https://www.extrapreneur.se/blog/datastrategi-del-2-bsta-bi-organisationen)<br/>
+*   [5 tips innan ni börjar använda Jira](https://www.extrapreneur.se/blog/5tipsjira)<br/>
 
 <!-- blog end -->

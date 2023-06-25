@@ -71,14 +71,16 @@ const file = await remark()
 await promisify(writeFile)(readmePath, String(file));
 
 function refreshAboutUsParagraph() {
-  let string = getAboutUsString;
+  let string = getAboutUsString.split("\\").join("").trim();
 
+  // let str = theText.split("A").join("");
+  console.log(string)
   return (tree) => {
     zone(tree, "about", (start, nodes, end) => [
       start,
       {
         type: "paragraph",
-        children: [{ type: "text", value: string }],
+        children: [{ type: "html", value: string }],
       },
       end,
     ]);
@@ -96,6 +98,10 @@ function refreshAboutUsParagraph() {
 })();
 
 function refreshBlogPosts(feedItems) {
+
+
+  
+  //console.log(feedItems);
   return () => (tree) => {
     zone(tree, "blog", (start, nodes, end) => {
       return [
@@ -105,6 +111,7 @@ function refreshBlogPosts(feedItems) {
           ordered: false,
           children: feedItems.map(
             ({ title, link, contentSnippet, pubDate }) => {
+              //console.log(title,link)
               return {
                 type: "listItem",
                 children: [
