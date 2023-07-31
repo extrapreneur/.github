@@ -40,7 +40,7 @@ const getAboutUsString = await puppeteer.launch({headless: 'new'}).then(async (b
   const p = await browser.newPage();
   //set viewpoint of browser page
   await p.setViewport({ width: 1000, height: 500 });
-  await p.goto("https://www.extrapreneur.se/blog");
+  await p.goto("https://www.extrapreneur.se/en/about-us");
 
   // const result = await p.evaluate(
   //   () =>
@@ -50,11 +50,10 @@ const getAboutUsString = await puppeteer.launch({headless: 'new'}).then(async (b
   const result = await p.evaluate(
     () =>
       document.querySelector(
-        "#sections > section > div.content-wrapper > div > div > article:nth-child(1) > div.blog-basic-grid--text > h1 > a"
+        "##block-a69218aa3038e836d047 > div > p"
       ).innerHTML
   );
   /*   await p.goto("https://www.extrapreneur.se/blog");
-
   const blogPostLinks = await p.evaluate(() =>
     Array.from(document.getElementsByTagName("h1"), (e) => e.innerHTML)
   ); */
