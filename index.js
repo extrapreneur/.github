@@ -50,7 +50,7 @@ const getAboutUsString = await puppeteer.launch({headless: 'new'}).then(async (b
   const result = await p.evaluate(
     () =>
       document.querySelector(
-        "##block-a69218aa3038e836d047 > div > p"
+        "#block-a69218aa3038e836d047 > div > div > p:nth-child(2)"
       ).innerHTML
   );
   /*   await p.goto("https://www.extrapreneur.se/blog");
