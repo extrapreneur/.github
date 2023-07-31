@@ -35,7 +35,7 @@ const __dirname = path.dirname(__filename);
 const readmePath = join(__dirname, "profile/README.md");
 
 // Rip about us first paragraph and blog links
-const getAboutUsString = await puppeteer.launch().then(async (browser) => {
+const getAboutUsString = await puppeteer.launch({headless: 'new'}).then(async (browser) => {
   //browser new page
   const p = await browser.newPage();
   //set viewpoint of browser page
