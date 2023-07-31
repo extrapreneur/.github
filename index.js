@@ -99,7 +99,7 @@ function refreshBlogPosts(feedItems) {
 
 
   
-  console.log(feedItems);
+  //console.log(feedItems);
   return () => (tree) => {
     zone(tree, "blog", (start, nodes, end) => {
       return [
@@ -109,7 +109,7 @@ function refreshBlogPosts(feedItems) {
           ordered: false,
           children: feedItems.map(
             ({ title, link, contentSnippet, pubDate }) => {
-              //console.log(title,link)
+              console.log(title,link)
               return {
                 type: "listItem",
                 children: [
