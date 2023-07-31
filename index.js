@@ -99,7 +99,7 @@ function refreshBlogPosts(feedItems) {
 
 
   
-  //console.log(feedItems);
+  console.log(feedItems);
   return () => (tree) => {
     zone(tree, "blog", (start, nodes, end) => {
       return [
