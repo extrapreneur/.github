@@ -25,6 +25,7 @@ async function getAboutUsString() {
   console.log("Navigating to the page...");
   await page.goto("https://www.extrapreneur.se/en/about-us");
   console.log("Page navigated...");
+  await page.waitForSelector("#block-a69218aa3038e836d047 > div > div > p:nth-child(2)", { timeout: 60000 });
   const result = await page.evaluate(
     () =>
       document.querySelector(
