@@ -36,31 +36,33 @@ const readmePath = join(__dirname, "profile/README.md");
 
 // Rip about us first paragraph and blog links
 const getAboutUsString = await puppeteer.launch({headless: 'new'}).then(async (browser) => {
-  //browser new page
-  const p = await browser.newPage();
-  //set viewpoint of browser page
-  await p.setViewport({ width: 1000, height: 500 });
-  await p.setDefaultNavigationTimeout(0)
-  await p.goto("https://www.extrapreneur.se/en/about-us");
 
-  // const result = await p.evaluate(
-  //   () =>
-  //     document.querySelector("#block-a69218aa3038e836d047 > div > p").innerHTML
-  // );
-
-  const result = await p.evaluate(
-    () =>
-      document.querySelector(
-        "#block-a69218aa3038e836d047 > div > div > p:nth-child(2)"
-      ).innerHTML
-  );
-  /*   await p.goto("https://www.extrapreneur.se/blog");
-  const blogPostLinks = await p.evaluate(() =>
-    Array.from(document.getElementsByTagName("h1"), (e) => e.innerHTML)
-  ); */
-
-  await browser.close();
-
+  try {
+    const p = await browser.newPage();
+    await p.setViewport({ width: 1000, height: 500 });
+    await p.goto("https://www.extrapreneur.se/en/about-us");
+  
+    // const result = await p.evaluate(
+    //   () =>
+    //     document.querySelector("#block-a69218aa3038e836d047 > div > p").innerHTML
+    // );
+  
+    const result = await p.evaluate(
+      () =>
+        document.querySelector(
+          "#block-a69218aa3038e836d047 > div > div > p:nth-child(2)"
+        ).innerHTML
+    );
+    /*   await p.goto("https://www.extrapreneur.se/blog");
+    const blogPostLinks = await p.evaluate(() =>
+      Array.from(document.getElementsByTagName("h1"), (e) => e.innerHTML)
+    ); */
+  } catch (error) {
+    console.log('An error occurred while navigating to the page:', error);
+  } finally {
+      await browser.close();
+  } 
+  
   return result;
 });
 
