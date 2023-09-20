@@ -1,13 +1,10 @@
 name: Update README fields from public page
 
 on:
-  # on push to the repository
   push:
-  # can be triggered manually
   workflow_dispatch:
-  # on a schedule at minute 6 and 36 of each hour
   schedule:
-    - cron: '6,36 * * * *'
+    - cron: '0 6-12/2 * * *'
     
 jobs:
   build:

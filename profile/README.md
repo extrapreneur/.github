@@ -21,14 +21,14 @@ Our name reflects our identity and what customers can expect from us. <strong>Ex
 
 <!-- blog start -->
 
-* [How to apply my verification knowledge in Automotive industry?](https://www.extrapreneur.se/blog/how-to-apply-my-verification-knowledge-in-automotive-industry)<br/>
+*   [REST vs GraphQL](https://www.extrapreneur.se/blog/restvsgraphql)<br/>
 
-* [Future of driving?](https://www.extrapreneur.se/blog/future-of-driving)<br/>
+*   [Mats Wåhlander: Transforming the World One Idea at a Time](https://www.extrapreneur.se/blog/mats-wahlander)<br/>
 
-* [Experience: Evolution of a CAB forum](https://www.extrapreneur.se/blog/experience-evolution-of-a-cab-forum)<br/>
+*   [Jakob Thomasson om ChatGPT inom frontend-utveckling](https://www.extrapreneur.se/blog/jakob-om-chatgpt)<br/>
 
-* [Hur kan du förbättra din kommunikationsförmåga?](https://www.extrapreneur.se/blog/hur-kan-du-frbttra-din-kommunikationsfrmga)<br/>
+*   [GitHub vs Azure DevOps](https://www.extrapreneur.se/blog/githubvsazure)<br/>
 
-* [Datastrategi del 2: Bästa BI-organisationen](https://www.extrapreneur.se/blog/datastrategi-del-2-bsta-bi-organisationen)<br/>
+*   [Från idé till app ](https://www.extrapreneur.se/blog/c33c2nha7wz3keilktq0u1vuta6cem)<br/>
 
 <!-- blog end -->
