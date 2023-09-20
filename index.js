@@ -57,13 +57,13 @@ const getAboutUsString = await puppeteer.launch({headless: 'new'}).then(async (b
     const blogPostLinks = await p.evaluate(() =>
       Array.from(document.getElementsByTagName("h1"), (e) => e.innerHTML)
     ); */
+    return result;
   } catch (error) {
     console.log('An error occurred while navigating to the page:', error);
   } finally {
       await browser.close();
   } 
   
-  return result;
 });
 
 const file = await remark()
