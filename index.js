@@ -40,6 +40,7 @@ const getAboutUsString = await puppeteer.launch({headless: 'new'}).then(async (b
   const p = await browser.newPage();
   //set viewpoint of browser page
   await p.setViewport({ width: 1000, height: 500 });
+  await p.setDefaultNavigationTimeout(0)
   await p.goto("https://www.extrapreneur.se/en/about-us");
 
   // const result = await p.evaluate(
