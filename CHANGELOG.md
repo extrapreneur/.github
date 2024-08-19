@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/extrapreneur/.github/compare/v1.4.0...v1.5.0) (2024-08-19)
+
+
+### :sparkles: New Features
+
+* **#8:** update docs ([#18](https://github.com/extrapreneur/.github/issues/18)) ([f89e1b5](https://github.com/extrapreneur/.github/commit/f89e1b5dbf5a360da45a6c4c16a2a19576296eef)), closes [#8](https://github.com/extrapreneur/.github/issues/8)
+
 ## [1.4.0](https://github.com/extrapreneur/.github/compare/v1.3.0...v1.4.0) (2024-08-19)
 
 
