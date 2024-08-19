@@ -22,7 +22,7 @@
   "homepage": "https://github.com/extrapreneur/threadripper#readme",
   "type": "module",
   "dependencies": {
-    "puppeteer": "^20.9.0",
+    "puppeteer": "^23.1.0",
     "turndown": "^7.1.2"
   }
 }
