@@ -1,0 +1,83 @@
+# -*- mode: yaml -*-
+
+manifest:
+  version: 1.0
+
+automations:
+  # Adds a label for the estimated time to review based on complexity of the change
+  estimated_time_to_review:
+    if:
+      - true
+    run:
+      - action: add-label@v1
+        args:
+          label: "{{ calc.etr }} min review"
+          color: {{ 'E94637' if (calc.etr >= 20) else ('FBBD10' if (calc.etr >= 5) else '36A853') }}
+
+  # Auto approves changes we deem safe such as docs, test and formatting updates
+  safe_changes:
+    if:
+      - {{ is.formatting or is.docs or is.tests }}
+    run: 
+      - action: add-label@v1
+        args:
+          label: 'safe-changes'
+      - action: approve@v1
+
+  # Recommends and selects a reviewer based on who has previously worked on that code
+  the_right_reviewer:
+    if: 
+      - true
+    run:
+      - action: add-reviewers@v1
+        args:
+          reviewers: {{ repo | codeExperts(gt=10) }}
+      - action: add-comment@v1
+        args:
+          comment: |
+            {{ repo | explainCodeExperts(gt=10) }}
+
+  # Adds label if tests are missing for the change
+  no_tests:
+    if:
+      - {{ is.no_tests and not (is.formatting or is.docs or is.only_dep) }}
+    run: 
+      - action: add-label@v1
+        args:
+          label: 'missing-tests'
+          color: '#E94637'
+
+  # Adds a label to highlight that files have been deleted in the PR
+  deleted:
+    if:
+      - {{ has.deleted_files }}
+    run: 
+      - action: add-label@v1
+        args:
+          label: 'deleted-files'
+          color: '#DF9C04'
+
+  # Approve renovate
+  approve_renovate:
+    if:
+      - {{ branch.author | includes(term="renovate") }}
+    run:
+      - action: approve@v1
+      - action: add-label@v1
+        args:
+          label: "dependencies"
+      - action: merge@v1
+        args:
+          wait_for_all_checks: true
+          squash_on_merge: true
+
+has:
+  deleted_files: {{ source.diff.files | map(attr='new_file') | match(term='/dev/null') | some }}
+calc:
+  etr: {{ branch | estimatedReviewTime }}
+is:
+  formatting: {{ source.diff.files | isFormattingChange }}
+  docs: {{ files | allDocs }}
+  no_tests: {{ files | match(regex=r/(tests_|spec)/) | nope }}
+  tests: {{ files | allTests }}
+  only_dep: {{ files | match(regex=r/(package.json|yarn.lock|go.mod|go.sum)|pom.xml/) | every }}
