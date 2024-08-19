@@ -1,3 +1,21 @@
+## [1.3.0](https://github.com/extrapreneur/.github/compare/v1.2.0...v1.3.0) (2024-08-19)
+
+
+### :sparkles: New Features
+
+* **#5:** update docs ([#15](https://github.com/extrapreneur/.github/issues/15)) ([c7eb796](https://github.com/extrapreneur/.github/commit/c7eb7960a18d5894ae25f7af9a7f70a09894e1db)), closes [#5](https://github.com/extrapreneur/.github/issues/5)
+* **#6:** update docs ([#16](https://github.com/extrapreneur/.github/issues/16)) ([56dbae3](https://github.com/extrapreneur/.github/commit/56dbae34556160ed7277a047a29804ebdfdd1c85)), closes [#6](https://github.com/extrapreneur/.github/issues/6)
+
+
+### :package: Maintenance
+
+* **#1:** release 2024w34 ([7da286c](https://github.com/extrapreneur/.github/commit/7da286c7f7818290cbabbfca2e9a4267001aafe4)), closes [#1](https://github.com/extrapreneur/.github/issues/1)
+* **#1:** release 2024w34 ([44ca176](https://github.com/extrapreneur/.github/commit/44ca176097a401c99229974d580e31f5e7c1b1c8)), closes [#1](https://github.com/extrapreneur/.github/issues/1)
+* **setup:** config ([0509a5e](https://github.com/extrapreneur/.github/commit/0509a5e2946213d7cd8089df1590ecb5b0407b9d))
+* **setup:** config ([e2d5c4b](https://github.com/extrapreneur/.github/commit/e2d5c4b44a47fa456f33f1558c3d47c2df524c59))
+* **setup:** config ([584caa9](https://github.com/extrapreneur/.github/commit/584caa943b0841314942c99c2e16b68239012eb8))
+* **setup:** config ([3ae1e17](https://github.com/extrapreneur/.github/commit/3ae1e17efdd86a9e917c0f7f900e1b428643a8dc))
+
 ## [1.2.0](https://github.com/extrapreneur/.github/compare/v1.1.0...v1.2.0) (2024-08-19)
 
 
