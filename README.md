@@ -9,8 +9,6 @@
   </p>
 </p>
 
-## Usage
-
 ## About us
 
 <!-- START_ABOUT_SECTION -->
