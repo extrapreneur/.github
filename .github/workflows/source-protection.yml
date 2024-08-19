@@ -1,0 +1,15 @@
+name: Source protection
+
+on:
+  workflow_call:
+
+jobs:
+  validate-commits:
+    name: Validate Commits
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Commmit lint
+        uses: wagoid/commitlint-github-action@v6
