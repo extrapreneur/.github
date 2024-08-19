@@ -1,10 +1,23 @@
-name: Production
+name: Pull Request
 
 on:
   workflow_dispatch:
   pull_request:
+    types: [opened, synchronize, reopened]
     branches:
+      - 'feat/*'
+    branches-ignore:
+      - 'dependabot/*'
       - 'main'
+
+permissions:
+  actions: 'write'
+  checks: 'write'
+  contents: 'write'
+  id-token: 'write'
+  issues: 'write'
+  pull-requests: 'write'
+  statuses: 'write'
 
 jobs:
   tests:
@@ -21,9 +34,7 @@ jobs:
       with:
         node-version: '20'
         cache: 'npm'
-
     - run: npm install
-
     - run: npm run start
 
     - name: Render markdown

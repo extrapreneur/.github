@@ -1,7 +1,5 @@
 name: Semantic Release
 
-run-name: '🚀 Release ${{ github.event.label.name }}'
-
 on:
   workflow_call:
 
