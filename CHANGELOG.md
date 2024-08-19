@@ -1,3 +1,15 @@
+## [1.4.0](https://github.com/extrapreneur/.github/compare/v1.3.0...v1.4.0) (2024-08-19)
+
+
+### :sparkles: New Features
+
+* **#7:** update docs ([#17](https://github.com/extrapreneur/.github/issues/17)) ([d5b32c6](https://github.com/extrapreneur/.github/commit/d5b32c6f34aae51904a3dbfaceaff9c17645d9a5)), closes [#7](https://github.com/extrapreneur/.github/issues/7)
+
+
+### :package: Maintenance
+
+* **setup:** config ([39f2495](https://github.com/extrapreneur/.github/commit/39f249589d251578b7bdd4ef228c7e1d48971dcf))
+
 ## [1.3.0](https://github.com/extrapreneur/.github/compare/v1.2.0...v1.3.0) (2024-08-19)
 
 
