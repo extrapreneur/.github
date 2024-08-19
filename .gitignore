@@ -49,6 +49,7 @@ typings/
 
 # Optional npm cache directory
 .npm
+commit.sh
 
 # Optional eslint cache
 .eslintcache
