@@ -6,9 +6,9 @@ on:
     types: [opened, synchronize, reopened]
     branches:
       - 'feat/*'
-    branches-ignore:
-      - 'dependabot/*'
-      - 'main'
+      - '!dependabot/*'
+      - '!fix/*'
+      - '!main'
 
 permissions:
   actions: 'write'
