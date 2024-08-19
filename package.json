@@ -26,6 +26,7 @@
     "turndown": "^7.1.2"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "glob": "^11.0.0"
   }
 }
