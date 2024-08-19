@@ -1,7 +1,7 @@
 <br />
 <h1>
 <p align="center">
-  <img src="/profile/images/extrapreneur-logo.png" alt="Logo" width="128" height="128">
+  <img src="profile/images/extrapreneur-logo.png" alt="Logo" width="128" height="128">
   <br>Extrapreneur - Think contribution
 </h1>
   <p align="center">
@@ -11,24 +11,12 @@
 
 ## About us at Extrapreneur
 
-<!--about start-->
+<!-- START_ABOUT_SECTION -->
 
-Our name reflects our identity and what customers can expect from us. <strong>Extrapreneur is a consultancy of IT professionals</strong> on a journey to contribute to the development of both our customers and colleagues, and we show this through our drive to make things happen. We have embarked on a journey to impress customers and create proud employees.
+<!-- END_ABOUT_SECTION -->
 
-<!--about end-->
+## What is happening at Extrapreneur - Latest posts
 
-## What is happening in Extrapreneur - Latest posts
+<!-- START_POSTS_SECTION -->
 
-<!-- blog start -->
-
-*   [REST vs GraphQL](https://www.extrapreneur.se/blog/restvsgraphql)<br/>
-
-*   [Mats Wåhlander: Transforming the World One Idea at a Time](https://www.extrapreneur.se/blog/mats-wahlander)<br/>
-
-*   [Jakob Thomasson om ChatGPT inom frontend-utveckling](https://www.extrapreneur.se/blog/jakob-om-chatgpt)<br/>
-
-*   [GitHub vs Azure DevOps](https://www.extrapreneur.se/blog/githubvsazure)<br/>
-
-*   [Från idé till app ](https://www.extrapreneur.se/blog/c33c2nha7wz3keilktq0u1vuta6cem)<br/>
-
-<!-- blog end -->
+<!-- END_POSTS_SECTION -->

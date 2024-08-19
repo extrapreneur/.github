@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --experimental-modules index.js"
+    "start": "node --experimental-modules scrape.js"
   },
   "repository": {
     "type": "git",
@@ -22,12 +22,7 @@
   "homepage": "https://github.com/extrapreneur/threadripper#readme",
   "type": "module",
   "dependencies": {
-    "mdast-zone": "^5.1.0",
     "puppeteer": "^20.9.0",
-    "remark": "^14.0.3",
-    "remark-html": "^15.0.2",
-    "rss-parser": "^3.13.0",
-    "to-vfile": "^7.2.3",
     "turndown": "^7.1.2"
   }
 }
