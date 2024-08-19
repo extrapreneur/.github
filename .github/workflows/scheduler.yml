@@ -1,4 +1,4 @@
-name: Update README fields from public page
+name: Scheduled Update
 
 on:
   push:
@@ -7,9 +7,6 @@ on:
     - cron: '0 6-12/2 * * *'
     
 jobs:
-  source-protection:
-    uses: ./.github/workflows/source-protection.yml
-
   tests:
     uses: ./.github/workflows/tests.yml
 

@@ -4,6 +4,9 @@ on:
   workflow_call:
 
 jobs:
+  source-protection:
+    uses: ./.github/workflows/source-protection.yml
+
   test:
     runs-on: ubuntu-latest
 
