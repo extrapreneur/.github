@@ -1,7 +1,7 @@
 <br />
 <h1>
 <p align="center">
-  <img src="/profile/images/extrapreneur-logo.png" alt="Logo" width="128" height="128">
+  <img src="images/extrapreneur-logo.png" alt="Logo" width="128" height="128">
   <br>Extrapreneur - Think contribution
 </h1>
   <p align="center">
@@ -11,24 +11,20 @@
 
 ## About us at Extrapreneur
 
-<!--about start-->
+<!-- START_ABOUT_SECTION -->
 
-Our name reflects our identity and what customers can expect from us. <strong>Extrapreneur is a consultancy of IT professionals</strong> on a journey to contribute to the development of both our customers and colleagues, and we show this through our drive to make things happen. We have embarked on a journey to impress customers and create proud employees.
+We strive to impress our customers and create proud employees. Our team of specialists is here to support you along your journey to digitization.
 
-<!--about end-->
+<!-- END_ABOUT_SECTION -->
 
-## What is happening in Extrapreneur - Latest posts
+## What is happening at Extrapreneur - Latest posts
 
-<!-- blog start -->
+<!-- START_POSTS_SECTION -->
 
-*   [REST vs GraphQL](https://www.extrapreneur.se/blog/restvsgraphql)<br/>
+- [Checklist support in Jira](https://www.extrapreneur.se/blog/restvsgraphql-bypdz-cdtzs)
+- [Top 6 use-cases using AI & ML in Jira](https://www.extrapreneur.se/blog/restvsgraphql-bypdz)
+- [Design för tillgänglighet](https://www.extrapreneur.se/blog/design-fr-tillgnglighet)
+- [REST vs GraphQL](https://www.extrapreneur.se/blog/restvsgraphql)
+- [Mats Wåhlander: Transforming the World One Idea at a Time](https://www.extrapreneur.se/blog/mats-wahlander)
 
-*   [Mats Wåhlander: Transforming the World One Idea at a Time](https://www.extrapreneur.se/blog/mats-wahlander)<br/>
-
-*   [Jakob Thomasson om ChatGPT inom frontend-utveckling](https://www.extrapreneur.se/blog/jakob-om-chatgpt)<br/>
-
-*   [GitHub vs Azure DevOps](https://www.extrapreneur.se/blog/githubvsazure)<br/>
-
-*   [Från idé till app ](https://www.extrapreneur.se/blog/c33c2nha7wz3keilktq0u1vuta6cem)<br/>
-
-<!-- blog end -->
+<!-- END_POSTS_SECTION -->

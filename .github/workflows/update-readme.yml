@@ -7,18 +7,30 @@ on:
     - cron: '0 6-12/2 * * *'
     
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x]
+  tests:
+    uses: ./.github/workflows/tests.yml
 
+  build:
+    needs: tests
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+    - uses: actions/checkout@v4
+    - name: Use Node.js
+      uses: actions/setup-node@v4
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: '20'
         cache: 'npm'
     - run: npm install
     - run: npm run start
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add .
+        if git diff-index --quiet HEAD; then
+          echo "No changes to commit"
+        else
+          git commit -m "chore(update): Update readme"
+          git push
+        fi

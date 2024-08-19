@@ -1,45 +1,33 @@
-
 import puppeteer from "puppeteer";
 import fs from "fs";
 import TurndownService from "turndown";
 
-const readmeFilePath = "scraped.md"; // Replace with your readme file path
-const webpageUrl = "https://www.extrapreneur.se/"; // Replace with the URL you want to scrape
+const readmeFilePath = "profile/README.md";
+const tempReadmeFilePath = "README.md";
 
-async function scrapeWebpage() {
+const indexUrl = "https://www.extrapreneur.se/en/home";
+const postsUrl = "https://www.extrapreneur.se/blog";
+
+async function scrape() {
   const browser = await puppeteer.launch({ headless: "new" });
   const page = await browser.newPage();
 
   try {
-    // Navigate to the webpage
-    await page.goto(webpageUrl);
-
-    // Wait for an element with a specific selector to appear
-    await page.waitForSelector("h2", { timeout: 60000 }); // Increase the timeout as needed
-
-    const scrapedHTML = await page.evaluate(() => {
-      return document.querySelector("h2").textContent; // Example: Scrape the text from an h1 element
-    });
-
-    // Initialize the Turndown service
-    const turndownService = new TurndownService();
-
-    // Convert the scraped HTML to Markdown
-    const scrapedMarkdown = turndownService.turndown(scrapedHTML);
-
-    // Read the existing readme content
-    const readmeContent = fs.readFileSync(readmeFilePath, "utf8");
-
-    // Replace a specific section in the readme with the scraped Markdown content
-    const updatedReadmeContent = readmeContent.replace(
-      /<!-- START_SCRAPED_MARKDOWN_SECTION -->.*<!-- END_SCRAPED_MARKDOWN_SECTION -->/s,
-      `<!-- START_SCRAPED_MARKDOWN_SECTION -->\n\n${scrapedMarkdown}\n\n<!-- END_SCRAPED_MARKDOWN_SECTION -->`
+    await updateSection(
+      page,
+      indexUrl,
+      "h2",
+      "p",
+      "START_ABOUT_SECTION",
+      "END_ABOUT_SECTION"
     );
-
-    // Save the updated content back to the readme file
-    fs.writeFileSync(readmeFilePath, updatedReadmeContent);
-
-    console.log("Readme.md updated successfully with scraped Markdown data!");
+    await updatePostsSection(
+      page,
+      postsUrl,
+      "h1",
+      "START_POSTS_SECTION",
+      "END_POSTS_SECTION"
+    );
   } catch (error) {
     console.error("Error:", error);
   } finally {
@@ -47,4 +35,74 @@ async function scrapeWebpage() {
   }
 }
 
-scrapeWebpage();
+async function updateSection(
+  page,
+  url,
+  waitForSelector,
+  contentSelector,
+  startTag,
+  endTag
+) {
+  try {
+    await page.goto(url);
+    await page.waitForSelector(waitForSelector, { timeout: 60000 });
+    const scrapedHTML = await page.evaluate((selector) => {
+      return document.querySelector(selector).textContent;
+    }, contentSelector);
+
+    const turndownService = new TurndownService();
+    const scrapedMarkdown = turndownService.turndown(scrapedHTML);
+    const readmeContent = fs.readFileSync(readmeFilePath, "utf8");
+    const updatedReadmeContent = readmeContent.replace(
+      new RegExp(`<!-- ${startTag} -->.*<!-- ${endTag} -->`, "s"),
+      `<!-- ${startTag} -->\n\n${scrapedMarkdown}\n\n<!-- ${endTag} -->`
+    );
+
+    fs.writeFileSync(readmeFilePath, updatedReadmeContent);
+  } catch (error) {
+    console.error("Error updating section:", error);
+  }
+}
+
+async function updatePostsSection(
+  page,
+  url,
+  waitForSelector,
+  startTag,
+  endTag
+) {
+  try {
+    await page.goto(url);
+    await page.waitForSelector(waitForSelector, { timeout: 60000 });
+    const scrapedData = await page.evaluate(() => {
+      const titles = Array.from(document.querySelectorAll("h1"))
+        .slice(0, 5)
+        .map((h1) => {
+          const anchor =
+            h1.closest("a") ||
+            h1.querySelector("a") ||
+            h1.parentElement.querySelector("a");
+          return {
+            title: h1.textContent.trim(),
+            link: anchor ? anchor.href.trim() : "#",
+          };
+        });
+      return titles;
+    });
+
+    const scrapedMarkdown = scrapedData
+      .map((item) => `- [${item.title}](${item.link})`)
+      .join("\n");
+    const readmeContent = fs.readFileSync(readmeFilePath, "utf8");
+    const updatedReadmeContent = readmeContent.replace(
+      new RegExp(`<!-- ${startTag} -->.*<!-- ${endTag} -->`, "s"),
+      `<!-- ${startTag} -->\n\n${scrapedMarkdown}\n\n<!-- ${endTag} -->`
+    );
+
+    fs.writeFileSync(readmeFilePath, updatedReadmeContent);
+  } catch (error) {
+    console.error("Error updating posts section:", error);
+  }
+}
+
+scrape();
