@@ -4,11 +4,6 @@ on:
   workflow_dispatch:
   pull_request:
     types: [opened, synchronize, reopened]
-    branches:
-      - 'feat/*'
-      - '!dependabot/*'
-      - '!fix/*'
-      - '!main'
 
 permissions:
   actions: 'write'
