@@ -3,9 +3,9 @@ name: Deploy main
 on:
   workflow_dispatch:
   pull_request:
+    branches: [ "main" ]
   merge_group:
-    types:
-      - checks_requested
+    types: [checks_requested]
 
 permissions:
   actions: 'write'
