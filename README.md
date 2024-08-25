@@ -1,18 +1,40 @@
-<br />
-<h1>
-<p align="center">
-  <img src="profile/images/extrapreneur-logo.png" alt="Logo" width="128" height="128">
-  <br> TEMP MARKDOWN
-</h1>
-</p>
+# .github
 
-<!-- START_ABOUT_SECTION -->
+A simple application that scrapes an element and a list of urls, then replaces sections in [profile/README.md](./profile/README.md)
+The organization's extrapreneur's profile.
 
-<!-- END_ABOUT_SECTION -->
+<center>
+  <img src="docs/images/screenshot.webp" alt="Screenshot">
+</center>
 
-## Latest posts
+## Prerequisites
 
-<!-- START_POSTS_SECTION -->
+- [Node JS](https://nodejs.org/en/download/package-manager)
 
-<!-- END_POSTS_SECTION -->
+## Install
 
+1. Clone repository
+
+```bash
+gh repo clone extrapreneur/.github
+```
+
+1. Navigate to directory
+
+```bash
+cd .github/
+```
+
+1. Install dependencies
+
+```bash
+npm install
+```
+
+## Usage
+
+1. Start application
+
+```bash
+npm run start
+```
