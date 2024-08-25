@@ -39,15 +39,6 @@ jobs:
         cat profile/README.md >> $GITHUB_STEP_SUMMARY
 
     - name: Commit and Push Changes
-      run: |
-        git config --global user.name "${{ secrets.GIT_USER }}"
-        git config --global user.email "${{ secrets.GIT_EMAIL }}"
-        git config --global commit.gpgSign true
-        git config --global user.signingkey "${{ secrets.GPG_SIGNING_KEY }}"
-        git add .
-        if git diff-index --quiet HEAD; then
-          echo "No changes to commit"
-        else
-          git commit -m "chore(update): Update readme"
-          git push
-        fi
+      uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: "chore(ci): Update README.md"
