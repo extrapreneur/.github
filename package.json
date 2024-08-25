@@ -1,5 +1,5 @@
 {
-  "name": "threadripper",
+  "name": "scrape",
   "version": "1.0.0",
   "description": "Basic node.js app to scrape strings from a public webpage",
   "main": "scrape.js",
