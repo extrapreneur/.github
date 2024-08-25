@@ -52,19 +52,8 @@ jobs:
         if git diff-index --quiet HEAD; then
           echo "No changes to commit"
         else
-          git commit -m "chore(update): Update readme" --author="Zorg <${{ secrets.GIT_EMAIL }}>" --signoff
+          git commit -m "chore(update): update readme" --author="Zorg <${{ secrets.GIT_EMAIL }}>" --signoff
           git push
         fi
       env:
         GITHUB_TOKEN: ${{ secrets.GIT_USER_PAT }}
-
-
-    # - name: Commit and Push Changes
-    #   run: |
-    #     git add .
-    #     if git diff-index --quiet HEAD; then
-    #       echo "No changes to commit"
-    #     else
-    #       git commit -m "chore(update): Update readme"
-    #       git push
-    #     fi
