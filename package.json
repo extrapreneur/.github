@@ -11,7 +11,7 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "puppeteer": "^23.5.1",
+    "puppeteer": "^23.5.2",
     "turndown": "^7.1.2"
   },
   "devDependencies": {
