@@ -34,7 +34,7 @@ jobs:
           persist-credentials: false
 
       - name: Slugify github variables
-        uses: rlespinasse/github-slug-action@v4.5.0
+        uses: rlespinasse/github-slug-action@v5.0.0
 
       - name: Semantic Release
         id: semantic-release
