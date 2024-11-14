@@ -39,13 +39,13 @@ automations:
 
   # Adds label if tests are missing for the change
   no_tests:
-    if:
-      - {{ is.no_tests and not (is.formatting or is.docs or is.only_dep) }}
-    run: 
-      - action: add-label@v1
-        args:
-          label: 'missing-tests'
-          color: '#E94637'
+  if:
+    - {{ files | match(regex=r"(spec|test|tests)") | nope }}
+  run: 
+    - action: add-label@v1
+      args:
+        label: 'missing-tests'
+        color: '#E94637'
 
   # Adds a label to highlight that files have been deleted in the PR
   deleted:
