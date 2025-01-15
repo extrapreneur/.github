@@ -7,7 +7,7 @@ permissions:
 jobs:
   dependabot:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == '${{ github.repository }}'
+    if: github.repository == '${{ github.repository }}'
     steps:
       - name: Dependabot metadata
         id: metadata
