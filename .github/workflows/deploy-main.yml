@@ -48,6 +48,7 @@ jobs:
 
     - name: Commit changes
       run: |
+        gh auth setup-git
         git add .
         if git diff-index --quiet HEAD; then
           echo "No changes to commit"
