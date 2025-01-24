@@ -24,9 +24,6 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v4
-      with:
-        ref: ${{ github.head_ref }}
-        token: ${{ secrets.GIT_USER_PAT }}
 
     - name: Use Node.js
       uses: actions/setup-node@v4
@@ -48,7 +45,6 @@ jobs:
 
     - name: Commit changes
       run: |
-        gh auth setup-git
         git add .
         if git diff-index --quiet HEAD; then
           echo "No changes to commit"
