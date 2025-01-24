@@ -9,7 +9,10 @@ const indexUrl = "https://www.extrapreneur.se/en/home";
 const postsUrl = "https://www.extrapreneur.se/blog";
 
 async function scrape() {
-  const browser = await puppeteer.launch({ headless: "new" });
+  const browser = await puppeteer.launch({
+    headless: "new",
+    args: ["--no-sandbox"],
+  });
   const page = await browser.newPage();
 
   try {

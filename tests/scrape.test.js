@@ -8,7 +8,10 @@ describe("Scraping Tests", () => {
   let page;
 
   beforeAll(async () => {
-    browser = await puppeteer.launch({ headless: "new" });
+    browser = await puppeteer.launch({
+      headless: "new",
+      args: ["--no-sandbox"],
+    });
     page = await browser.newPage();
   });
 
