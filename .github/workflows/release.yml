@@ -2,7 +2,7 @@ name: Release
 
 on:
   workflow_run:
-    workflows: ["deploy-main"]
+    workflows: ["Deploy main"]
     types:
       - 'completed'
 
