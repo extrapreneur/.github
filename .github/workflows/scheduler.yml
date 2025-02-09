@@ -4,7 +4,12 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 6-12/2 * * *'
-    
+
+permissions:
+  contents: 'read'
+  pull-requests: 'read'
+  checks: 'write'
+
 jobs:
   tests:
     uses: ./.github/workflows/tests.yml
