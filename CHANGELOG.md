@@ -1,3 +1,18 @@
+## [1.7.0](https://github.com/extrapreneur/.github/compare/v1.6.0...v1.7.0) (2025-02-11)
+
+### :sparkles: New Features
+
+* **config:** added commit lint config ([2bf3988](https://github.com/extrapreneur/.github/commit/2bf39880196273adc76aefcf6a7c7e24035136c6))
+
+### :bug: Bug Fixes
+
+* cleanup dependencies ([60a5516](https://github.com/extrapreneur/.github/commit/60a55164c821ac0228a25c7b6a4610a61d1c7f03))
+* pinned actions to commit sha ([#70](https://github.com/extrapreneur/.github/issues/70)) ([23910ea](https://github.com/extrapreneur/.github/commit/23910ea4b9cc3bc430085c63b7d65264bf456901))
+
+### :package: Maintenance
+
+* **deps:** bump linear-b/gitstream-github-action from 2.0.73 to 2.0.74 ([#68](https://github.com/extrapreneur/.github/issues/68)) ([b261839](https://github.com/extrapreneur/.github/commit/b261839ce926befdadf71566f5cd6219b71e4aa3))
+
 ## [1.6.0](https://github.com/extrapreneur/.github/compare/v1.5.0...v1.6.0) (2025-02-09)
 
 ### :sparkles: New Features
