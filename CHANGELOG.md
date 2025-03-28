@@ -1,3 +1,14 @@
+## [1.7.2](https://github.com/extrapreneur/.github/compare/v1.7.1...v1.7.2) (2025-03-28)
+
+### :bug: Bug Fixes
+
+* add contributors ([2af6b5b](https://github.com/extrapreneur/.github/commit/2af6b5ba431a4fb648fea6f452916237aa043d4f))
+* merge error ([db9c8ae](https://github.com/extrapreneur/.github/commit/db9c8ae923c3b5584c9e003ebd476929853fe91c))
+
+### :package: Maintenance
+
+* **update:** update readme ([fa97888](https://github.com/extrapreneur/.github/commit/fa978880d0e0328ce0a43f35b2ee6b128391655d))
+
 ## [1.7.1](https://github.com/extrapreneur/.github/compare/v1.7.0...v1.7.1) (2025-03-28)
 
 ### :bug: Bug Fixes
