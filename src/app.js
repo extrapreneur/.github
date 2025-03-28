@@ -1,6 +1,7 @@
 import puppeteer from "puppeteer";
 import fs from "fs";
 import TurndownService from "turndown";
+import { Octokit } from "@octokit/rest";
 
 const readmeFilePath = "profile/README.md";
 const tempReadmeFilePath = "README.md";
@@ -31,6 +32,7 @@ async function scrape() {
       "START_POSTS_SECTION",
       "END_POSTS_SECTION"
     );
+    await updateContributorsSection();
   } catch (error) {
     console.error("Error:", error);
   } finally {
@@ -105,6 +107,33 @@ async function updatePostsSection(
     fs.writeFileSync(readmeFilePath, updatedReadmeContent);
   } catch (error) {
     console.error("Error updating posts section:", error);
+  }
+}
+
+async function updateContributorsSection() {
+  try {
+    const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+    const { data: members } = await octokit.orgs.listMembers({
+      org: "extrapreneur",
+    });
+
+    const contributorsMarkdown = members
+      .map(
+        (member) => `- [${member.login}](https://github.com/${member.login})`
+      )
+      .join("\n");
+    const readmeContent = fs.readFileSync(readmeFilePath, "utf8");
+    const updatedReadmeContent = readmeContent.replace(
+      new RegExp(
+        `<!-- START_CONTRIBUTORS_SECTION -->.*<!-- END_CONTRIBUTORS_SECTION -->`,
+        "s"
+      ),
+      `<!-- START_CONTRIBUTORS_SECTION -->\n\n## Contributors\n\n${contributorsMarkdown}\n\n<!-- END_CONTRIBUTORS_SECTION -->`
+    );
+
+    fs.writeFileSync(readmeFilePath, updatedReadmeContent);
+  } catch (error) {
+    console.error("Error updating contributors section:", error);
   }
 }
 

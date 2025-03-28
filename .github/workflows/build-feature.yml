@@ -30,7 +30,10 @@ jobs:
 
     - run: npm install
 
-    - run: npm run start
+    - name: Run scrapy
+      run: npm run start
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Render markdown
       run: |

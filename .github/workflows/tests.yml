@@ -27,4 +27,8 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - run: npm install
-      - run: npm test
+      
+      - name: Test scrapy
+        run: npm test
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
