@@ -1,3 +1,13 @@
+## [1.9.0](https://github.com/extrapreneur/.github/compare/v1.8.0...v1.9.0) (2025-03-28)
+
+### :sparkles: New Features
+
+* 86 add profiles images to contributors ([#88](https://github.com/extrapreneur/.github/issues/88)) ([c50d457](https://github.com/extrapreneur/.github/commit/c50d45734aee83c4f5fb828cbfd2b1b5731840bf))
+
+### :package: Maintenance
+
+* **update:** update readme ([6db51f7](https://github.com/extrapreneur/.github/commit/6db51f78550151729da4a39333a8938085f7bc52))
+
 ## [1.8.0](https://github.com/extrapreneur/.github/compare/v1.7.2...v1.8.0) (2025-03-28)
 
 ### :sparkles: New Features
