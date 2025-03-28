@@ -1,3 +1,14 @@
+## [1.8.0](https://github.com/extrapreneur/.github/compare/v1.7.2...v1.8.0) (2025-03-28)
+
+### :sparkles: New Features
+
+* add contributor profile images ([#87](https://github.com/extrapreneur/.github/issues/87)) ([0839bb0](https://github.com/extrapreneur/.github/commit/0839bb0a35df85ae8c03575bf7f4b41b21174ecf))
+
+### :bug: Bug Fixes
+
+* athentication error ([aa06eff](https://github.com/extrapreneur/.github/commit/aa06eff04e6a485e3a2e78b6cde19cd8f6ebbf84))
+* athentication error ([32f70b2](https://github.com/extrapreneur/.github/commit/32f70b256345583c0a2484e1468b6091da6a352c))
+
 ## [1.7.2](https://github.com/extrapreneur/.github/compare/v1.7.1...v1.7.2) (2025-03-28)
 
 ### :bug: Bug Fixes
