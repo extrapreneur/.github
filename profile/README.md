@@ -26,19 +26,4 @@ We strive to impress our customers and create proud employees. Our team of speci
 
 <!-- START_CONTRIBUTORS_SECTION -->
 
-## Contributors
-
-- [cissil](https://github.com/cissil)
-- [Daniel-E-Extrapreneur](https://github.com/Daniel-E-Extrapreneur)
-- [danielmellqvist](https://github.com/danielmellqvist)
-- [eduardoOlguin](https://github.com/eduardoOlguin)
-- [fridisbredis](https://github.com/fridisbredis)
-- [Gattanjo-Extrapreneur](https://github.com/Gattanjo-Extrapreneur)
-- [jakobthomasson](https://github.com/jakobthomasson)
-- [joakim-extrapreneur](https://github.com/joakim-extrapreneur)
-- [marcusagren](https://github.com/marcusagren)
-- [PeterThorn](https://github.com/PeterThorn)
-- [psilore](https://github.com/psilore)
-- [zorg-bork](https://github.com/zorg-bork)
-
 <!-- END_CONTRIBUTORS_SECTION -->
