@@ -112,23 +112,35 @@ async function updatePostsSection(
 
 async function updateContributorsSection() {
   try {
-    const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+    const octokit = new Octokit({ auth: process.env.GIT_USER_PAT });
     const { data: members } = await octokit.orgs.listMembers({
       org: "extrapreneur",
     });
 
     const contributorsMarkdown = members
       .map(
-        (member) => `- [${member.login}](https://github.com/${member.login})`
+        (member) =>
+          `<div style="flex: 1 1 150px; margin: 10px; text-align: center;">
+            <a href="https://github.com/${member.login}" style="text-decoration: none; color: inherit;">
+              <img src="${member.avatar_url}" width="80" height="80" alt="${member.login}" style="border-radius: 50%;"/>
+              <br />
+              <sub><b>${member.login}</b></sub>
+            </a>
+          </div>`
       )
       .join("\n");
+
+    const contributorsContainer = `<div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center; margin: 20px 0;">
+      ${contributorsMarkdown}
+    </div>`;
+
     const readmeContent = fs.readFileSync(readmeFilePath, "utf8");
     const updatedReadmeContent = readmeContent.replace(
       new RegExp(
         `<!-- START_CONTRIBUTORS_SECTION -->.*<!-- END_CONTRIBUTORS_SECTION -->`,
         "s"
       ),
-      `<!-- START_CONTRIBUTORS_SECTION -->\n\n## Contributors\n\n${contributorsMarkdown}\n\n<!-- END_CONTRIBUTORS_SECTION -->`
+      `<!-- START_CONTRIBUTORS_SECTION -->\n\n## Contributors\n\n${contributorsContainer}\n\n<!-- END_CONTRIBUTORS_SECTION -->`
     );
 
     fs.writeFileSync(readmeFilePath, updatedReadmeContent);
