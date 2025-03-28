@@ -112,37 +112,48 @@ async function updatePostsSection(
 
 async function updateContributorsSection() {
   try {
-    const octokit = new Octokit({ auth: process.env.GIT_USER_PAT });
+    const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
     const { data: members } = await octokit.orgs.listMembers({
       org: "extrapreneur",
     });
 
-    const contributorsMarkdown = members
-      .map(
-        (member) =>
-          `<div style="flex: 1 1 150px; margin: 10px; text-align: center;">
-            <a href="https://github.com/${member.login}" style="text-decoration: none; color: inherit;">
-              <img src="${member.avatar_url}" width="80" height="80" alt="${member.login}" style="border-radius: 50%;"/>
-              <br />
-              <sub><b>${member.login}</b></sub>
-            </a>
-          </div>`
-      )
-      .join("\n");
+    // Group contributors into rows of 6
+    const rows = [];
+    for (let i = 0; i < members.length; i += 6) {
+      const row = members
+        .slice(i, i + 6)
+        .map(
+          (member) =>
+            `<td align="center" style="padding: 10px;">
+              <a href="https://github.com/${member.login}" style="text-decoration: none; color: inherit;">
+                <img src="${member.avatar_url}" width="80" height="80" alt="${member.login}" style="border-radius: 50%;"/>
+                <br />
+                <sub><b>${member.login}</b></sub>
+              </a>
+            </td>`
+        )
+        .join("");
+      rows.push(`<tr>${row}</tr>`);
+    }
 
-    const contributorsContainer = `<div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center; margin: 20px 0;">
-      ${contributorsMarkdown}
-    </div>`;
+    // Wrap contributors in a table
+    const contributorsTable = `<table style="width: 100%; border-collapse: collapse;">
+      ${rows.join("\n")}
+    </table>`;
 
+    // Read the existing README file
     const readmeContent = fs.readFileSync(readmeFilePath, "utf8");
+
+    // Replace the contributors section in the README
     const updatedReadmeContent = readmeContent.replace(
       new RegExp(
         `<!-- START_CONTRIBUTORS_SECTION -->.*<!-- END_CONTRIBUTORS_SECTION -->`,
         "s"
       ),
-      `<!-- START_CONTRIBUTORS_SECTION -->\n\n## Contributors\n\n${contributorsContainer}\n\n<!-- END_CONTRIBUTORS_SECTION -->`
+      `<!-- START_CONTRIBUTORS_SECTION -->\n\n## Contributors\n\n${contributorsTable}\n\n<!-- END_CONTRIBUTORS_SECTION -->`
     );
 
+    // Write the updated content back to the README file
     fs.writeFileSync(readmeFilePath, updatedReadmeContent);
   } catch (error) {
     console.error("Error updating contributors section:", error);
