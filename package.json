@@ -1,21 +1,22 @@
 {
-  "name": "scrape",
+  "name": "scrapy",
   "version": "1.0.0",
   "description": "Basic node.js app to scrape strings from a public webpage",
-  "main": "scrape.js",
+  "main": "app.js",
   "scripts": {
     "test": "jest",
-    "start": "node --experimental-modules scrape.js"
+    "start": "node --experimental-modules src/app.js"
   },
   "author": "Erik Emmerfors",
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "@octokit/rest": "^21.1.1",
     "puppeteer": "^24.4.0",
     "turndown": "^7.1.2"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "glob": "^11.0.1"
+    "glob": "^11.0.1",
+    "jest": "^29.7.0"
   }
 }
