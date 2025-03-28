@@ -1,3 +1,26 @@
+## [1.7.1](https://github.com/extrapreneur/.github/compare/v1.7.0...v1.7.1) (2025-03-28)
+
+### :bug: Bug Fixes
+
+* add contributors ([2b59cb9](https://github.com/extrapreneur/.github/commit/2b59cb9d2c1b25c09ee9a93265a6f73eef10d3a3))
+
+### :package: Maintenance
+
+* **deps:** bump actions/setup-node from 4.2.0 to 4.3.0 ([#82](https://github.com/extrapreneur/.github/issues/82)) ([fdf9d26](https://github.com/extrapreneur/.github/commit/fdf9d267c7ab01964b9b89ed61df0b87380eb0bd))
+* **deps:** bump cycjimmy/semantic-release-action from 4.1.1 to 4.2.0 ([#79](https://github.com/extrapreneur/.github/issues/79)) ([e0bbbed](https://github.com/extrapreneur/.github/commit/e0bbbed196394c593568cd6b656e6a1f1a2a5fa0))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.74 to 2.0.75 ([#72](https://github.com/extrapreneur/.github/issues/72)) ([4c6ff3b](https://github.com/extrapreneur/.github/commit/4c6ff3b1d1867ad53c7fe4494bc450d88b1eb3c1))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.75 to 2.0.78 ([#73](https://github.com/extrapreneur/.github/issues/73)) ([86da02b](https://github.com/extrapreneur/.github/commit/86da02be7cffa983f71fd2c1f7f806dbdbc4e2f7))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.78 to 2.0.80 ([#75](https://github.com/extrapreneur/.github/issues/75)) ([07c7073](https://github.com/extrapreneur/.github/commit/07c70736a7ef754034798253396987981a916948))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.80 to 2.0.82 ([#78](https://github.com/extrapreneur/.github/issues/78)) ([622a4a5](https://github.com/extrapreneur/.github/commit/622a4a5599de7749fe4f95a8d07e15ba002b6f6d))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.82 to 2.0.84 ([#80](https://github.com/extrapreneur/.github/issues/80)) ([1058902](https://github.com/extrapreneur/.github/commit/1058902057f7a70dc0c45591b8a98967539c259e))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.84 to 2.0.89 ([#83](https://github.com/extrapreneur/.github/issues/83)) ([b2f62f7](https://github.com/extrapreneur/.github/commit/b2f62f7ba849eb3f05ff12ccfae26c8f17b7c1f7))
+* **deps:** bump puppeteer from 24.2.0 to 24.2.1 ([#71](https://github.com/extrapreneur/.github/issues/71)) ([62fefd1](https://github.com/extrapreneur/.github/commit/62fefd176e738cd39c55cd86ba8f4803caed3239))
+* **deps:** bump puppeteer from 24.2.1 to 24.3.0 ([#74](https://github.com/extrapreneur/.github/issues/74)) ([99c5804](https://github.com/extrapreneur/.github/commit/99c580487800498208b69ddbc6413981734c8ad3))
+* **deps:** bump puppeteer from 24.3.0 to 24.3.1 ([#76](https://github.com/extrapreneur/.github/issues/76)) ([9d39e18](https://github.com/extrapreneur/.github/commit/9d39e18c8fd1f4cec7c750170349c3d87c5cca74))
+* **deps:** bump puppeteer from 24.3.1 to 24.4.0 ([#77](https://github.com/extrapreneur/.github/issues/77)) ([025967e](https://github.com/extrapreneur/.github/commit/025967e4f7f10f51cf299c0087196a8cf53833a4))
+* **deps:** bump rlespinasse/github-slug-action from 5.0.0 to 5.1.0 ([#81](https://github.com/extrapreneur/.github/issues/81)) ([194954a](https://github.com/extrapreneur/.github/commit/194954a9337416d410d12d8774e3ec4a72773a9c))
+* **update:** update readme ([d3682d7](https://github.com/extrapreneur/.github/commit/d3682d7b3d38035bb109552a465c26714322c42d))
+
 ## [1.7.0](https://github.com/extrapreneur/.github/compare/v1.6.0...v1.7.0) (2025-02-11)
 
 ### :sparkles: New Features
