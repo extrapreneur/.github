@@ -36,9 +36,9 @@ jobs:
     - run: npm install
 
     - name: Run scrapy
-      run: npm run start
       env:
-        GIT_USER_PAT: ${{ secrets.GIT_USER_PAT }}
+        TOKEN: ${{ secrets.GIT_USER_PAT }}
+      run: npm run start
 
     - name: Render markdown
       run: |
