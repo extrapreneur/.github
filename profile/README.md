@@ -29,7 +29,7 @@ We strive to impress our customers and create proud employees. Our team of speci
 ## Contributors
 
 <table style="width: 100%; border-collapse: collapse;">
-      <tr><td align="center" style="padding: 10px;">
+          <tr><td align="center" style="padding: 10px;">
               <a href="https://github.com/cissil" style="text-decoration: none; color: inherit;">
                 <img src="https://avatars.githubusercontent.com/u/113510893?v=4" width="80" height="80" alt="cissil" style="border-radius: 50%;"/>
                 <br />
@@ -59,14 +59,14 @@ We strive to impress our customers and create proud employees. Our team of speci
                 <br />
                 <sub><b>fridisbredis</b></sub>
               </a>
-            </td><td align="center" style="padding: 10px;">
+            </td></tr>
+<tr><td align="center" style="padding: 10px;">
               <a href="https://github.com/Gattanjo-Extrapreneur" style="text-decoration: none; color: inherit;">
                 <img src="https://avatars.githubusercontent.com/u/127220831?v=4" width="80" height="80" alt="Gattanjo-Extrapreneur" style="border-radius: 50%;"/>
                 <br />
                 <sub><b>Gattanjo-Extrapreneur</b></sub>
               </a>
-            </td></tr>
-<tr><td align="center" style="padding: 10px;">
+            </td><td align="center" style="padding: 10px;">
               <a href="https://github.com/jakobthomasson" style="text-decoration: none; color: inherit;">
                 <img src="https://avatars.githubusercontent.com/u/117156357?v=4" width="80" height="80" alt="jakobthomasson" style="border-radius: 50%;"/>
                 <br />
@@ -90,7 +90,8 @@ We strive to impress our customers and create proud employees. Our team of speci
                 <br />
                 <sub><b>PeterThorn</b></sub>
               </a>
-            </td><td align="center" style="padding: 10px;">
+            </td></tr>
+<tr><td align="center" style="padding: 10px;">
               <a href="https://github.com/psilore" style="text-decoration: none; color: inherit;">
                 <img src="https://avatars.githubusercontent.com/u/366256?v=4" width="80" height="80" alt="psilore" style="border-radius: 50%;"/>
                 <br />
@@ -103,6 +104,6 @@ We strive to impress our customers and create proud employees. Our team of speci
                 <sub><b>zorg-bork</b></sub>
               </a>
             </td></tr>
-    </table>
+        </table>
 
 <!-- END_CONTRIBUTORS_SECTION -->

@@ -1,3 +1,13 @@
+## [1.9.2](https://github.com/extrapreneur/.github/compare/v1.9.1...v1.9.2) (2025-03-31)
+
+### :bug: Bug Fixes
+
+* **workflows:** add test ([4c9a7ba](https://github.com/extrapreneur/.github/commit/4c9a7ba8ff9c93b75353cead801fc2cd3315ff41))
+
+### :package: Maintenance
+
+* **update:** update readme ([80cb71a](https://github.com/extrapreneur/.github/commit/80cb71a6843a3794aa73e18a46c2c19b779b8105))
+
 ## [1.9.1](https://github.com/extrapreneur/.github/compare/v1.9.0...v1.9.1) (2025-03-31)
 
 ### :bug: Bug Fixes
