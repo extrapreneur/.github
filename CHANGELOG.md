@@ -1,3 +1,14 @@
+## [1.9.1](https://github.com/extrapreneur/.github/compare/v1.9.0...v1.9.1) (2025-03-31)
+
+### :bug: Bug Fixes
+
+* fix contributors ([7cbcf6b](https://github.com/extrapreneur/.github/commit/7cbcf6b754b42be458d24a6998d9e056ddd6f994))
+
+### :package: Maintenance
+
+* **deps:** bump linear-b/gitstream-github-action from 2.0.89 to 2.0.90 ([#89](https://github.com/extrapreneur/.github/issues/89)) ([85d0037](https://github.com/extrapreneur/.github/commit/85d0037e316e5674d9268a8107cb67becbf587b1))
+* **update:** update readme ([7dfe731](https://github.com/extrapreneur/.github/commit/7dfe7314cf386edb23febccbe678a05cb8d79c81))
+
 ## [1.9.0](https://github.com/extrapreneur/.github/compare/v1.8.0...v1.9.0) (2025-03-28)
 
 ### :sparkles: New Features
