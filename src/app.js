@@ -159,7 +159,7 @@ async function updateContributorsSection() {
     const contributorsContainer = `<div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center; margin: 20px 0;">
       ${contributorsMarkdown}
     </div>`;
-    
+
     const readmeContent = fs.readFileSync(readmeFilePath, "utf8");
 
     // Replace the contributors section in the README
@@ -170,7 +170,7 @@ async function updateContributorsSection() {
       ),
       `<!-- START_CONTRIBUTORS_SECTION -->\n\n## Contributors\n\n${contributorsTable}\n\n<!-- END_CONTRIBUTORS_SECTION -->`
     );
-
+    console.log("Generated table:", contributorsTable); // Debugging log
     // Write the updated content back to the README file
     fs.writeFileSync(readmeFilePath, updatedReadmeContent);
   } catch (error) {

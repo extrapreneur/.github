@@ -1,11 +1,11 @@
-name: Pull request deploy
+name: Build feature
 
 on:
   workflow_dispatch:
-  pull_request:
-    types: [opened, synchronize, reopened]
+  push:
     branches:
-      - 'main'
+      - '**'
+      - '!main'
 
 permissions:
   contents: 'read'
