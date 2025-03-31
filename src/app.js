@@ -112,7 +112,7 @@ async function updatePostsSection(
 
 async function updateContributorsSection() {
   try {
-    const octokit = new Octokit({ auth: process.env.GIT_USER_PAT });
+    const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
     const { data: members } = await octokit.orgs.listMembers({
       org: "extrapreneur",
     });
