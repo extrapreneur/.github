@@ -55,5 +55,5 @@ jobs:
           git push --set-upstream origin $BRANCH_NAME
           gh pr create --base main --head $BRANCH_NAME --repo "$REPO_URL" --title "$TITLE" --label "readme-update" --assignee ${{ secrets.GIT_USER }} --body "$BODY"
         fi
-        env:
+      env:
         GH_TOKEN: ${{ secrets.GIT_USER_PAT }}
