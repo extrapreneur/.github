@@ -6,8 +6,8 @@ on:
     - cron: '0 6-12/2 * * *'
 
 permissions:
-  contents: 'read'
-  pull-requests: 'read'
+  contents: 'write'
+  pull-requests: 'write'
   checks: 'write'
 
 jobs:
