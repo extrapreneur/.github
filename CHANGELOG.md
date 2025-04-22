@@ -1,3 +1,27 @@
+## [1.9.3](https://github.com/extrapreneur/.github/compare/v1.9.2...v1.9.3) (2025-04-22)
+
+### :bug: Bug Fixes
+
+* change variable name ([4c1b986](https://github.com/extrapreneur/.github/commit/4c1b9861c4452b6e015d11efac44324bf855c622))
+* **ci:** add bot ([fdd371c](https://github.com/extrapreneur/.github/commit/fdd371c41591fa134ca92bd22dad48a7987817ac))
+* **ci:** change permissions ([507a129](https://github.com/extrapreneur/.github/commit/507a1299e284cb97c51ec6bb46712a1fb3ccb423))
+* **ci:** oops ([b43e651](https://github.com/extrapreneur/.github/commit/b43e65193e0a333e4dfe5d53b3e9908ca248750d))
+* **ffs:** do not setup git ([4317ddf](https://github.com/extrapreneur/.github/commit/4317ddf171aa0481707c98173f3a197b19d38299))
+* updated pat ([3cb0e4f](https://github.com/extrapreneur/.github/commit/3cb0e4f8c3c0a84d9b6fea0ecce6c0f37ce4c99d))
+* **workflows:** add correct variable ([8f1c4fa](https://github.com/extrapreneur/.github/commit/8f1c4fa970a8c31825429b91f47f9682adcace93))
+
+### :package: Maintenance
+
+* **deps:** bump actions/setup-node from 4.3.0 to 4.4.0 ([#97](https://github.com/extrapreneur/.github/issues/97)) ([e34d5a2](https://github.com/extrapreneur/.github/commit/e34d5a22cebd91c54cbd9af228d8e975a9786ba7))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.90 to 2.0.92 ([#93](https://github.com/extrapreneur/.github/issues/93)) ([0f0a560](https://github.com/extrapreneur/.github/commit/0f0a560bd44895457e18598348ba134dd268740a))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.92 to 2.0.95 ([#95](https://github.com/extrapreneur/.github/issues/95)) ([189b349](https://github.com/extrapreneur/.github/commit/189b3492c51492251432866a03113b93b3a1aa56))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.95 to 2.0.99 ([#96](https://github.com/extrapreneur/.github/issues/96)) ([ea6e11d](https://github.com/extrapreneur/.github/commit/ea6e11de930d1a6124f78e76a94cd865f6e0a5f8))
+* **deps:** bump puppeteer from 24.4.0 to 24.5.0 ([#91](https://github.com/extrapreneur/.github/issues/91)) ([fedbe35](https://github.com/extrapreneur/.github/commit/fedbe35733f9c36ab9bc3313a5c43fa206eabb73))
+* **deps:** bump puppeteer from 24.4.0 to 24.5.0 ([#91](https://github.com/extrapreneur/.github/issues/91)) ([1e1066e](https://github.com/extrapreneur/.github/commit/1e1066eb04654e317e75c94d23de942dfbc1a44f))
+* **deps:** bump puppeteer from 24.5.0 to 24.6.0 ([#92](https://github.com/extrapreneur/.github/issues/92)) ([2eaa984](https://github.com/extrapreneur/.github/commit/2eaa98492d0ed1dad2338b4e0de27b1113dd12f3))
+* **deps:** bump puppeteer from 24.6.0 to 24.6.1 ([#94](https://github.com/extrapreneur/.github/issues/94)) ([c6cb653](https://github.com/extrapreneur/.github/commit/c6cb653405675d1f547975f160fa4444bf6fc61a))
+* update readme ([#98](https://github.com/extrapreneur/.github/issues/98)) ([bd474ca](https://github.com/extrapreneur/.github/commit/bd474caca71d6dd90fa1b17931456510e9abd21e))
+
 ## [1.9.2](https://github.com/extrapreneur/.github/compare/v1.9.1...v1.9.2) (2025-03-31)
 
 ### :bug: Bug Fixes
