@@ -44,3 +44,5 @@ jobs:
           git commit -m "chore(update): Update readme"
           git push
         fi
+      env:
+        TOKEN: ${{ secrets.GIT_USER_PAT }}
