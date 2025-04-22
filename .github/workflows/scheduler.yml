@@ -28,21 +28,36 @@ jobs:
 
     - run: npm install
 
+    - name: Setup git
+      run: |
+        gh auth setup-git
+
+    - name: Configure git
+      run: |
+        git config --global user.name "${{ secrets.GIT_USER }}"
+        git config --global user.email "${{ secrets.GIT_EMAIL }}"
+
     - name: Run scrapy
       env:
         TOKEN: ${{ secrets.GIT_USER_PAT }}
       run: npm run start
 
-    - name: Commit and Push Changes
+    - name: Create pr for readme updates
       run: |
-        git config --global user.name "${{ secrets.GIT_USER }}"
-        git config --global user.email "${{ secrets.GIT_EMAIL }}"
-        git add .
-        if git diff-index --quiet HEAD; then
-          echo "No changes to commit"
+        TITLE="chore: update readme"
+        INVENTORY_URL="${{ github.server_url }}/${{ github.repository }}/blob/main/profile/README.md"
+        BODY="Updated organisation readme, see [profile/README.md]($INVENTORY_URL)"
+        BRANCH_NAME="chore-update-readme-${{ github.run_id }}"
+        REPO_URL="${{ github.server_url }}/${{ github.repository }}"
+        git pull origin main
+        if git diff --quiet profile/README.md; then
+          echo "No changes detected in readme"
         else
-          git commit -m "chore(update): Update readme"
-          git push
+          git checkout -b "$BRANCH_NAME"
+          git add profile/README.md
+          git commit -m "chore: update readme" --author="${{ secrets.GIT_USER }} <${{ secrets.GIT_EMAIL }}>" --signoff
+          git push --set-upstream origin $BRANCH_NAME
+          gh pr create --base main --head $BRANCH_NAME --repo "$REPO_URL" --title "$TITLE" --label "readme-update" --assignee ${{ secrets.GIT_USER }} --body "$BODY"
         fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.GIT_USER_PAT }}
+        env:
+        GH_TOKEN: ${{ secrets.GIT_USER_PAT }}
