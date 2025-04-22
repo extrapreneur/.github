@@ -45,4 +45,4 @@ jobs:
           git push
         fi
       env:
-        TOKEN: ${{ secrets.GIT_USER_PAT }}
+        GITHUB_TOKEN: ${{ secrets.GIT_USER_PAT }}
