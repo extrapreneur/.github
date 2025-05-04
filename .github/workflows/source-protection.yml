@@ -19,6 +19,6 @@ jobs:
       - name: Commmit lint
         uses: wagoid/commitlint-github-action@b948419dd99f3fd78a6548d48f94e3df7f6bf3ed
         with:
-          configFile: .github/commitlint.config.mjs
+          configFile: .github/commitlint.config.cjs
           failOnErrors: true
           failOnWarnings: false
