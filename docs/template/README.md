@@ -15,3 +15,9 @@
 <!-- START_POSTS_SECTION -->
 
 <!-- END_POSTS_SECTION -->
+
+## Contributors
+
+<!-- START_CONTRIBUTORS_SECTION -->
+
+<!-- END_CONTRIBUTORS_SECTION -->
