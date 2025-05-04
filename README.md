@@ -1,10 +1,13 @@
 # .github
 
-A simple application that scrapes an element and a list of urls, then replaces sections in [profile/README.md](./profile/README.md)
-The organization's extrapreneur's profile.
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![semantic-release: node](https://img.shields.io/badge/semantic--release-node-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
+[![Release](https://github.com/extrapreneur/.github/actions/workflows/release.yml/badge.svg)](https://github.com/extrapreneur/.github/actions/workflows/release.yml)
+
+A simple node js application that scrapes an element and a list of urls, then replaces sections in [profile/README.md](./profile/README.md).
 
 <center>
-  <img src="docs/images/screenshot.webp" alt="Screenshot">
+  <img width="640" src="docs/images/screenshot.webp" alt="Screenshot">
 </center>
 
 ## Prerequisites
