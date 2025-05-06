@@ -4,7 +4,7 @@
   "description": "Basic node.js app to scrape strings from a public webpage",
   "main": "app.js",
   "scripts": {
-    "test": "jest",
+    "test": "node --no-warnings --experimental-vm-modules node_modules/jest/bin/jest.js",
     "start": "node --experimental-modules src/app.js"
   },
   "author": "Erik Emmerfors",
