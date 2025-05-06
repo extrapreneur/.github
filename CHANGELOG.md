@@ -1,3 +1,22 @@
+## [1.9.4](https://github.com/extrapreneur/.github/compare/v1.9.3...v1.9.4) (2025-05-06)
+
+### :bug: Bug Fixes
+
+* add experimental node modules ([#107](https://github.com/extrapreneur/.github/issues/107)) ([784db69](https://github.com/extrapreneur/.github/commit/784db696506696114497237651cc98073ef7670d))
+
+### :package: Maintenance
+
+* add owner ([7f48c51](https://github.com/extrapreneur/.github/commit/7f48c514972864de448830109961bef89a0ffca0))
+* **deps-dev:** bump glob from 11.0.1 to 11.0.2 ([#101](https://github.com/extrapreneur/.github/issues/101)) ([c07e707](https://github.com/extrapreneur/.github/commit/c07e7076dc951d9146d6682c167274a7951ca343))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.100 to 2.0.101 ([#105](https://github.com/extrapreneur/.github/issues/105)) ([fdb8723](https://github.com/extrapreneur/.github/commit/fdb8723da40ee95cc1594b7ad6306e9938c5cca0))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.99 to 2.0.100 ([#103](https://github.com/extrapreneur/.github/issues/103)) ([9fa5694](https://github.com/extrapreneur/.github/commit/9fa56943a81ff131cd43d23b867f90efca819ac6))
+* **deps:** bump puppeteer from 24.6.1 to 24.7.0 ([#99](https://github.com/extrapreneur/.github/issues/99)) ([3bbdfe9](https://github.com/extrapreneur/.github/commit/3bbdfe9203d09af7e8194b6684e346eadd55e09f))
+* **deps:** bump puppeteer from 24.7.0 to 24.7.1 ([#100](https://github.com/extrapreneur/.github/issues/100)) ([2c09f9f](https://github.com/extrapreneur/.github/commit/2c09f9f9726d9c09df514f4778e510a97a225843))
+* **deps:** bump puppeteer from 24.7.1 to 24.7.2 ([#102](https://github.com/extrapreneur/.github/issues/102)) ([0822325](https://github.com/extrapreneur/.github/commit/0822325d652fdeaa5da700f4c6b67f221237a608))
+* **deps:** bump puppeteer from 24.7.2 to 24.8.0 ([#104](https://github.com/extrapreneur/.github/issues/104)) ([a75faa7](https://github.com/extrapreneur/.github/commit/a75faa7b28be421413885b0944f52ad456d5f591))
+* spring cleanup ([894caec](https://github.com/extrapreneur/.github/commit/894caecc93522734242f5bce0bbcb9bdba344078))
+* update docs ([489a12d](https://github.com/extrapreneur/.github/commit/489a12d124f533f6de8cb46ef8da4cb5d9643a3b))
+
 ## [1.9.3](https://github.com/extrapreneur/.github/compare/v1.9.2...v1.9.3) (2025-04-22)
 
 ### :bug: Bug Fixes
