@@ -25,7 +25,7 @@ describe("Scraping Tests", () => {
 
   test("Verify index URL loads correctly", async () => {
     await page.goto(indexUrl);
-    await page.waitForSelector("h2", { timeout: 120000 });
+    await page.waitForSelector("h2");
     const content = await page.evaluate(
       () => document.querySelector("p").textContent
     );
@@ -34,7 +34,7 @@ describe("Scraping Tests", () => {
 
   test("Verify posts URL loads correctly", async () => {
     await page.goto(postsUrl);
-    await page.waitForSelector("h1", { timeout: 120000 });
+    await page.waitForSelector("h1");
     const titles = await page.evaluate(() => {
       return Array.from(document.querySelectorAll("h1"))
         .slice(0, 5)
@@ -45,7 +45,7 @@ describe("Scraping Tests", () => {
 
   test("Verify scraped data contains valid links", async () => {
     await page.goto(postsUrl);
-    await page.waitForSelector("h1", { timeout: 120000 });
+    await page.waitForSelector("h1");
     const scrapedData = await page.evaluate(() => {
       return Array.from(document.querySelectorAll("h1"))
         .slice(0, 5)
