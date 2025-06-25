@@ -1,4 +1,5 @@
 import puppeteer from "puppeteer";
+import { jest } from '@jest/globals';
 
 const indexUrl = "https://www.extrapreneur.se/en/home";
 const postsUrl = "https://www.extrapreneur.se/blog";
