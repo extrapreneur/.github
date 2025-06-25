@@ -1,9 +1,12 @@
 import puppeteer from "puppeteer";
+import { jest } from '@jest/globals';
 
 const indexUrl = "https://www.extrapreneur.se/en/home";
 const postsUrl = "https://www.extrapreneur.se/blog";
 
 describe("Scraping Tests", () => {
+  jest.setTimeout(120000); // <-- Move here
+
   let browser;
   let page;
 
@@ -16,12 +19,14 @@ describe("Scraping Tests", () => {
   });
 
   afterAll(async () => {
-    await browser.close();
+    if (browser) {
+      await browser.close();
+    }
   });
 
   test("Verify index URL loads correctly", async () => {
     await page.goto(indexUrl);
-    await page.waitForSelector("h2", { timeout: 120000 });
+    await page.waitForSelector("h2");
     const content = await page.evaluate(
       () => document.querySelector("p").textContent
     );
@@ -30,7 +35,7 @@ describe("Scraping Tests", () => {
 
   test("Verify posts URL loads correctly", async () => {
     await page.goto(postsUrl);
-    await page.waitForSelector("h1", { timeout: 120000 });
+    await page.waitForSelector("h1");
     const titles = await page.evaluate(() => {
       return Array.from(document.querySelectorAll("h1"))
         .slice(0, 5)
@@ -41,7 +46,7 @@ describe("Scraping Tests", () => {
 
   test("Verify scraped data contains valid links", async () => {
     await page.goto(postsUrl);
-    await page.waitForSelector("h1", { timeout: 120000 });
+    await page.waitForSelector("h1");
     const scrapedData = await page.evaluate(() => {
       return Array.from(document.querySelectorAll("h1"))
         .slice(0, 5)
