@@ -1,5 +1,7 @@
 import puppeteer from "puppeteer";
 
+jest.setTimeout(120000);
+
 const indexUrl = "https://www.extrapreneur.se/en/home";
 const postsUrl = "https://www.extrapreneur.se/blog";
 
@@ -16,7 +18,9 @@ describe("Scraping Tests", () => {
   });
 
   afterAll(async () => {
-    await browser.close();
+    if (browser) {
+      await browser.close();
+    }
   });
 
   test("Verify index URL loads correctly", async () => {
