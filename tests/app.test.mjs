@@ -5,7 +5,6 @@ const indexUrl = "https://www.extrapreneur.se/en/home";
 const postsUrl = "https://www.extrapreneur.se/blog";
 
 describe("Scraping Tests", () => {
-  jest.setTimeout(120000); // <-- Move here
 
   let browser;
   let page;
