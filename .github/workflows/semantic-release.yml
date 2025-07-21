@@ -4,7 +4,7 @@ on:
   workflow_call:
 
 permissions:
-  actions: 'write'
+  actions: 'read'
   security-events: 'write'
   contents: 'write'
   id-token: 'write'
