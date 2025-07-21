@@ -32,6 +32,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
+          token: ${{ secrets.GIT_USER_PAT }}
 
       - name: Slugify github variables
         uses: rlespinasse/github-slug-action@955b5ba4560860f8a633bd24190941f16016e42c
