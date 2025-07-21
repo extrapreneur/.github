@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           fetch-depth: 0
-          token: ${{ secrets.GIT_USER_PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Slugify github variables
         uses: rlespinasse/github-slug-action@955b5ba4560860f8a633bd24190941f16016e42c
@@ -47,7 +47,7 @@ jobs:
             @semantic-release/exec@7.0.2
             conventional-changelog-conventionalcommits@8.0.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GIT_USER_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Success summary
         if: ${{ steps.semantic-release.outputs.new_release_published == 'true' }}
