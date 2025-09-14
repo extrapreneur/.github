@@ -67,12 +67,6 @@ We strive to impress our customers and create proud employees. Our team of speci
                 <sub><b>Gattanjo-Extrapreneur</b></sub>
               </a>
             </td><td align="center" style="padding: 10px;">
-              <a href="https://github.com/HolgerCosmo" style="text-decoration: none; color: inherit;">
-                <img src="https://avatars.githubusercontent.com/u/219986546?v=4" width="80" height="80" alt="HolgerCosmo" style="border-radius: 50%;"/>
-                <br />
-                <sub><b>HolgerCosmo</b></sub>
-              </a>
-            </td><td align="center" style="padding: 10px;">
               <a href="https://github.com/jakobthomasson" style="text-decoration: none; color: inherit;">
                 <img src="https://avatars.githubusercontent.com/u/117156357?v=4" width="80" height="80" alt="jakobthomasson" style="border-radius: 50%;"/>
                 <br />
@@ -85,13 +79,6 @@ We strive to impress our customers and create proud employees. Our team of speci
                 <sub><b>joakim-extrapreneur</b></sub>
               </a>
             </td><td align="center" style="padding: 10px;">
-              <a href="https://github.com/marcusagren" style="text-decoration: none; color: inherit;">
-                <img src="https://avatars.githubusercontent.com/u/14345027?v=4" width="80" height="80" alt="marcusagren" style="border-radius: 50%;"/>
-                <br />
-                <sub><b>marcusagren</b></sub>
-              </a>
-            </td></tr>
-<tr><td align="center" style="padding: 10px;">
               <a href="https://github.com/PeterThorn" style="text-decoration: none; color: inherit;">
                 <img src="https://avatars.githubusercontent.com/u/59649922?v=4" width="80" height="80" alt="PeterThorn" style="border-radius: 50%;"/>
                 <br />
@@ -103,7 +90,8 @@ We strive to impress our customers and create proud employees. Our team of speci
                 <br />
                 <sub><b>psilore</b></sub>
               </a>
-            </td><td align="center" style="padding: 10px;">
+            </td></tr>
+<tr><td align="center" style="padding: 10px;">
               <a href="https://github.com/StaffanSegel" style="text-decoration: none; color: inherit;">
                 <img src="https://avatars.githubusercontent.com/u/207986833?v=4" width="80" height="80" alt="StaffanSegel" style="border-radius: 50%;"/>
                 <br />
