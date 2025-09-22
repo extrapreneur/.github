@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/extrapreneur/.github/compare/v1.11.0...v1.11.1) (2025-09-22)
+
+### :package: Maintenance
+
+* **deps:** bump linear-b/gitstream-github-action from 2.0.166 to 2.0.168 ([#177](https://github.com/extrapreneur/.github/issues/177)) ([47472fb](https://github.com/extrapreneur/.github/commit/47472fb19295c9415d38a15b72198588d5d10253))
+* **deps:** bump puppeteer from 24.21.0 to 24.22.0 ([#176](https://github.com/extrapreneur/.github/issues/176)) ([d289da5](https://github.com/extrapreneur/.github/commit/d289da54efb277fb9e11cb7c89b1b1bc8817be80))
+
 ## [1.11.0](https://github.com/extrapreneur/.github/compare/v1.10.1...v1.11.0) (2025-09-17)
 
 ### :sparkles: New Features
