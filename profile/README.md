@@ -98,6 +98,12 @@ We strive to impress our customers and create proud employees. Our team of speci
                 <sub><b>StaffanSegel</b></sub>
               </a>
             </td><td align="center" style="padding: 10px;">
+              <a href="https://github.com/Trinityfox" style="text-decoration: none; color: inherit;">
+                <img src="https://avatars.githubusercontent.com/u/233748676?v=4" width="80" height="80" alt="Trinityfox" style="border-radius: 50%;"/>
+                <br />
+                <sub><b>Trinityfox</b></sub>
+              </a>
+            </td><td align="center" style="padding: 10px;">
               <a href="https://github.com/zorg-bork" style="text-decoration: none; color: inherit;">
                 <img src="https://avatars.githubusercontent.com/u/176931299?v=4" width="80" height="80" alt="zorg-bork" style="border-radius: 50%;"/>
                 <br />
