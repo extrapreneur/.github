@@ -13,12 +13,14 @@
 
 ## Requirements
 
-Personal access token is required to query GitHub API to get members from a GitHub organisation using [Octokit](https://github.com/octokit).
+Personal access token is required to query GitHub API to get members from a GitHub organisation using [Octokit](https://github.com/octokit).  
 `OWNER` environment variable is the repository owner's username or organisation name. For example, octocat or octoorg.
 
 ### How to create a personal access token
 
 [Creating secrets for a repository](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets#creating-secrets-for-a-repository) using your own personal access token set as environment variable `TOKEN`
+
+`github.repository_owner` return the owner of the repository, see [GitHub context: repository_owner](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#github-context)
 
 #### Running app locally
 
@@ -28,8 +30,6 @@ export OWNER=your-github-organisation
 ```
 
 #### Running in a GitHub action with a workflow
-
-`github.repository_owner` return the owner of the repository, see [GitHub context: repository_owner](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#github-context)
 
 ```bash
 jobs:
