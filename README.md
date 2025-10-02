@@ -12,6 +12,7 @@ A simple node js application that scrapes an element and a list of urls, then re
 
 ## Prerequisites
 
+- [gh-cli](https://github.com/cli/cli?tab=readme-ov-file#installation)
 - [Node JS](https://nodejs.org/en/download/package-manager)
 
 ## Install
