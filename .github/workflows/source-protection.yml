@@ -1,3 +1,4 @@
+---
 name: Source protection
 
 on:
@@ -22,3 +23,22 @@ jobs:
           configFile: .github/commitlint.config.cjs
           failOnErrors: true
           failOnWarnings: false
+  validate-yaml:
+    name: Validate YAML
+    runs-on: ubuntu-24.04
+    steps:
+      - name: yamllint
+        run: |
+          CONFIG=".github/settings/.yamllint.yml"
+          # Check if config file exists
+          if [ -f "$CONFIG" ]; then
+            echo "Using yamllint config file: $CONFIG"
+            if docker run --rm -v $(pwd):/data cytopia/yamllint . -c "$CONFIG"; then
+              echo "Lint free! 🎉"
+            fi
+          else
+            echo "Config file '$CONFIG' not found, running yamllint with default configuration"
+            if docker run --rm -v $(pwd):/data cytopia/yamllint .; then
+              echo "Lint free! 🎉"
+            fi
+          fi

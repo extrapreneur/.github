@@ -1,3 +1,4 @@
+---
 name: Scheduled Update
 
 on:
@@ -18,43 +19,44 @@ jobs:
     needs: tests
     runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
 
-    - name: Use Node.js
-      uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
-      with:
-        node-version: '20'
-        cache: 'npm'
+      - name: Use Node.js
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: '20'
+          cache: 'npm'
 
-    - run: npm install
+      - run: npm install
 
-    - name: Configure git
-      run: |
-        git config --global user.name "${{ secrets.GIT_USER }}"
-        git config --global user.email "${{ secrets.GIT_EMAIL }}"
+      - name: Configure git
+        run: |
+          git config --global user.name "${{ secrets.GIT_USER }}"
+          git config --global user.email "${{ secrets.GIT_EMAIL }}"
 
-    - name: Run scrapy
-      env:
-        TOKEN: ${{ secrets.GIT_USER_PAT }}
-        OWNER: ${{ github.repository_owner }}
-      run: npm run start
+      - name: Run scrapy
+        env:
+          TOKEN: ${{ secrets.GIT_USER_PAT }}
+          OWNER: ${{ github.repository_owner }}
+        run: npm run start
 
-    - name: Create pr for readme updates
-      run: |
-        TITLE="chore: update readme"
-        INVENTORY_URL="${{ github.server_url }}/${{ github.repository }}/blob/main/profile/README.md"
-        BODY="Updated organisation readme, see [profile/README.md]($INVENTORY_URL)"
-        BRANCH_NAME="chore-update-readme-${{ github.run_id }}"
-        REPO_URL="${{ github.server_url }}/${{ github.repository }}"
-        git pull origin main
-        if git diff --quiet profile/README.md; then
-          echo "No changes detected in readme"
-        else
-          git checkout -b "$BRANCH_NAME"
-          git add profile/README.md
-          git commit -m "chore: update readme" --author="${{ secrets.GIT_USER }} <${{ secrets.GIT_EMAIL }}>" --signoff
-          git push --set-upstream origin $BRANCH_NAME
-          gh pr create --base main --head $BRANCH_NAME --repo "$REPO_URL" --title "$TITLE" --label "readme-update" --assignee ${{ secrets.GIT_USER }} --body "$BODY"
-        fi
-      env:
-        GH_TOKEN: ${{ secrets.GIT_USER_PAT }}
+      - name: Create pr for readme updates
+        run: |
+          TITLE="chore: update readme"
+          INVENTORY_URL="${{ github.server_url }}/${{ github.repository }}/blob/main/profile/README.md"
+          BODY="Updated organisation readme, see [profile/README.md]($INVENTORY_URL)"
+          BRANCH_NAME="chore-update-readme-${{ github.run_id }}"
+          REPO_URL="${{ github.server_url }}/${{ github.repository }}"
+          git pull origin main
+          if git diff --quiet profile/README.md; then
+            echo "No changes detected in readme"
+          else
+            git checkout -b "$BRANCH_NAME"
+            git add profile/README.md
+            git commit -m "chore: update readme" --author="${{ secrets.GIT_USER }} <${{ secrets.GIT_EMAIL }}>" --signoff
+            git push --set-upstream origin $BRANCH_NAME
+            gh pr create --base main --head $BRANCH_NAME --repo "$REPO_URL" --title "$TITLE" --label "readme-update" \
+              --assignee ${{ secrets.GIT_USER }} --body "$BODY"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GIT_USER_PAT }}
