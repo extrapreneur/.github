@@ -66,7 +66,7 @@ jobs:
 
 ### Start application
 
-Srape page and generate a [README.md](profile/README.md) with scraped data
+Scrape page and generate a [README.md](profile/README.md) with scraped data
 
 ```bash
 npm run start
