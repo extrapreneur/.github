@@ -31,4 +31,5 @@ jobs:
       - name: Test scrapy
         env:
           TOKEN: ${{ secrets.GIT_USER_PAT }}
+          OWNER: ${{ github.repository_owner }}
         run: npm test

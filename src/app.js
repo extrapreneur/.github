@@ -116,7 +116,7 @@ async function updateContributorsSection() {
       auth: process.env.TOKEN,
     });
     const { data: members } = await octokit.orgs.listMembers({
-      org: "extrapreneur",
+      org: process.env.OWNER,
     });
 
     console.log("Fetched members:", members); // Debugging log

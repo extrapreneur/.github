@@ -33,6 +33,7 @@ jobs:
     - name: Run scrapy
       env:
         TOKEN: ${{ secrets.GIT_USER_PAT }}
+        OWNER: ${{ github.repository_owner }}
       run: npm run start
 
     - name: Render markdown

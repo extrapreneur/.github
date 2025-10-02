@@ -4,42 +4,43 @@
 [![semantic-release: node](https://img.shields.io/badge/semantic--release-node-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 [![Release](https://github.com/extrapreneur/.github/actions/workflows/release.yml/badge.svg)](https://github.com/extrapreneur/.github/actions/workflows/release.yml)
 
-A simple node js application that scrapes an element and a list of urls, then replaces sections in [profile/README.md](./profile/README.md).
-
-<center>
-  <img width="640" src="docs/images/screenshot.webp" alt="Screenshot">
-</center>
+📖 A simple node js application that scrapes an element and a list of urls, then replaces sections in [profile/README.md](./profile/README.md) from a page on the internet.
 
 ## Prerequisites
 
 - [gh-cli](https://github.com/cli/cli?tab=readme-ov-file#installation)
 - [Node JS](https://nodejs.org/en/download/package-manager)
 
-## Required
+## Requirements
 
-Personal access token is required to get members from a GitHub organisation using [Octokit](https://github.com/octokit)
+Personal access token is required to query GitHub API to get members from a GitHub organisation using [Octokit](https://github.com/octokit).
+`OWNER` environment variable is the repository owner's username or organisation name. For example, octocat or octoorg.
 
-### Example running app locally
+### How to create a personal access token
+
+[Creating secrets for a repository](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets#creating-secrets-for-a-repository) using your own personal access token set as environment variable `TOKEN`
+
+#### Running app locally
 
 ```bash
 export TOKEN=your-personal-access-token
+export OWNER=your-github-organisation
 ```
 
-### Example GitHub action
+#### Running in a GitHub action with a workflow
 
-[Creating secrets for a repository](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets#creating-secrets-for-a-repository) using your own `TOKEN`
+`github.repository_owner` return the owner of the repository, see [GitHub context: repository_owner](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#github-context)
 
-1. Add to GitHub workflow
-
-   ```bash
-   jobs:
-     run-node-js-app:
-       runs-on: ubuntu-latest
-       steps:
-         - name: Add PAT and run node js
-           env:
-             TOKEN: ${{ secrets.TOKEN }}
-   ```
+```bash
+jobs:
+  run-node-js-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add PAT and run node js
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+```
 
 ## Install
 
@@ -67,4 +68,11 @@ export TOKEN=your-personal-access-token
 
 ```bash
 npm run start
+```
+
+## Cleanup environment variables after use
+
+```bash
+unset TOKEN
+unset OWNER
 ```
