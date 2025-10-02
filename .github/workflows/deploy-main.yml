@@ -1,3 +1,4 @@
+---
 name: Deploy main
 
 on:
@@ -23,39 +24,39 @@ jobs:
     needs: tests
     runs-on: ubuntu-24.04
     steps:
-    - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
 
-    - name: Use Node.js
-      uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
-      with:
-        node-version: '20'
-        cache: 'npm'
-    - run: npm install
+      - name: Use Node.js
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm install
 
-    - name: Run scrapy
-      env:
-        TOKEN: ${{ secrets.GIT_USER_PAT }}
-        OWNER: ${{ github.repository_owner }}
-      run: npm run start
+      - name: Run scrapy
+        env:
+          TOKEN: ${{ secrets.GIT_USER_PAT }}
+          OWNER: ${{ github.repository_owner }}
+        run: npm run start
 
-    - name: Render markdown
-      run: |
-        echo "### Markdown" >> $GITHUB_STEP_SUMMARY
-        cat profile/README.md >> $GITHUB_STEP_SUMMARY
+      - name: Render markdown
+        run: |
+          echo "### Markdown" >> $GITHUB_STEP_SUMMARY
+          cat profile/README.md >> $GITHUB_STEP_SUMMARY
 
-    - name: Configure git
-      run: |
-        git config --global user.name "${{ secrets.GIT_USER }}"
-        git config --global user.email "${{ secrets.GIT_EMAIL }}"
+      - name: Configure git
+        run: |
+          git config --global user.name "${{ secrets.GIT_USER }}"
+          git config --global user.email "${{ secrets.GIT_EMAIL }}"
 
-    - name: Commit changes
-      run: |
-        git add .
-        if git diff-index --quiet HEAD; then
-          echo "No changes to commit"
-        else
-          git commit -m "chore(update): update readme" --author="Zorg <${{ secrets.GIT_EMAIL }}>" --signoff
-          git push
-        fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.GIT_USER_PAT }}
+      - name: Commit changes
+        run: |
+          git add .
+          if git diff-index --quiet HEAD; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore(update): update readme" --author="Zorg <${{ secrets.GIT_EMAIL }}>" --signoff
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_USER_PAT }}

@@ -1,3 +1,4 @@
+---
 name: Tests
 
 on:
@@ -27,7 +28,7 @@ jobs:
           node-version: '20'
           cache: 'npm'
       - run: npm ci
-      
+
       - name: Test scrapy
         env:
           TOKEN: ${{ secrets.GIT_USER_PAT }}
