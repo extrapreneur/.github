@@ -27,9 +27,13 @@ jobs:
     name: Validate YAML
     runs-on: ubuntu-24.04
     steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GIT_USER_PAT }}
       - name: yamllint
         run: |
-          CONFIG=".github/settings/.yamllint.yml"
+          CONFIG=".github/.yamllint.yml"
           # Check if config file exists
           if [ -f "$CONFIG" ]; then
             echo "Using yamllint config file: $CONFIG"
