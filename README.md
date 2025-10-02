@@ -64,10 +64,24 @@ jobs:
 
 ## Usage
 
-1. Start application
+### Start application
 
 ```bash
 npm run start
+```
+
+### Run tests
+
+Suites: Scraping Tests:
+
+Tests:
+
+- Verify index URL loads correctly
+- Verify posts URL loads correctly
+- Verify scraped data contains valid links
+
+```bash
+npm run tests
 ```
 
 ## Cleanup environment variables after use
