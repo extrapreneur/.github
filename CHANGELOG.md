@@ -1,3 +1,16 @@
+## [1.12.0](https://github.com/extrapreneur/.github/compare/v1.11.3...v1.12.0) (2025-10-02)
+
+### :sparkles: New Features
+
+* add how to use pat with octokit ([#184](https://github.com/extrapreneur/.github/issues/184)) ([3935989](https://github.com/extrapreneur/.github/commit/393598939ff75abcde48d31c4f1ca70b792e0bc8))
+* update docs and pr template ([#183](https://github.com/extrapreneur/.github/issues/183)) ([e396bc0](https://github.com/extrapreneur/.github/commit/e396bc0f4286dd1f57904f9cf23791833f7061b6))
+
+### :package: Maintenance
+
+* **deps-dev:** bump jest from 30.1.3 to 30.2.0 ([#180](https://github.com/extrapreneur/.github/issues/180)) ([75dec20](https://github.com/extrapreneur/.github/commit/75dec200905662cdc4276a395819d8062508ac8b))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.168 to 2.0.169 ([#181](https://github.com/extrapreneur/.github/issues/181)) ([5ea6109](https://github.com/extrapreneur/.github/commit/5ea610939d1c8dd4170017a619388187bb5291c4))
+* **deps:** bump puppeteer from 24.22.3 to 24.23.0 ([#182](https://github.com/extrapreneur/.github/issues/182)) ([82019f3](https://github.com/extrapreneur/.github/commit/82019f33138f49008a7b9ebc230ddc9853eab044))
+
 ## [1.11.3](https://github.com/extrapreneur/.github/compare/v1.11.2...v1.11.3) (2025-09-25)
 
 ### :package: Maintenance
