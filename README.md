@@ -83,7 +83,7 @@ Tests:
 - Verify scraped data contains valid links
 
 ```bash
-npm run tests
+npm run test
 ```
 
 ## Cleanup environment variables after use
