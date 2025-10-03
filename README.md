@@ -17,7 +17,9 @@ Personal access token is required when querying the GitHub API to get members fr
 
 Scopes at least required on PAT is `read:org`
 
-`OWNER` environment variable is the repository owner's username or organisation name. For example, octocat or octoorg.
+`OWNER` environment variable is the repository owner's username or organisation name. 
+
+**Example:** octocat or octoorg.
 
 ### How to create a personal access token
 
