@@ -24,7 +24,7 @@ Personal access token is required when querying the GitHub API to get members fr
 
 #### Running app on a local machine
 
-```bash
+```shell
 export TOKEN=your-personal-access-token
 export OWNER=your-github-organisation
 ```
