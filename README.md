@@ -15,7 +15,7 @@
 
 Personal access token is required when querying the GitHub API to get members from a GitHub organisation using [Octokit](https://github.com/octokit).
 
-Scopes at least required on PAT is `read:org`
+Scopes needs at least required on PAT is `read:org`
 
 `OWNER` environment variable is the repository owner's username or organisation name. 
 
