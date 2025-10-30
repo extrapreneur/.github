@@ -57,9 +57,9 @@ jobs:
           if git diff-index --quiet HEAD; then
             echo "No changes to commit"
           else
-            git pull --rebase
             git add .
             git commit -m "chore(update): update readme" --author="Zorg <${{ secrets.GIT_EMAIL }}>" --signoff
+            git pull --rebase
             git push
           fi
         env:
