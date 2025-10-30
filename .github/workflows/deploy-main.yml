@@ -1,20 +1,11 @@
----
-name: Deploy main
 
+name: Deploy main
 on:
   workflow_dispatch:
   push:
     paths:
       - 'profile/README.md'
 
-permissions:
-  actions: 'write'
-  checks: 'write'
-  contents: 'write'
-  id-token: 'write'
-  issues: 'write'
-  pull-requests: 'write'
-  statuses: 'write'
 
 jobs:
   tests:
@@ -56,6 +47,25 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GIT_USER_PAT }}
           GITHUB_REPOSITORY: ${{ github.repository }}
 
+      - name: Detect changes
+        id: changes
+        run: |
+          git add .
+          if git diff-index --quiet HEAD --; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git checkout main
+          git commit -m "chore(update): update readme" --author="zork-bork <${{ secrets.GIT_USER }}>" --signoff
+          git pull --rebase
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_USER_PAT }}
       - name: Commit changes
         run: |
           git checkout main
