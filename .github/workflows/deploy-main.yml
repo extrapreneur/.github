@@ -63,7 +63,7 @@ jobs:
         if: steps.changes.outputs.changed == 'true'
         run: |
           git checkout main
-          git commit -m "chore(update): update readme" --author="zork-bork <${{ secrets.GIT_USER }}>" --signoff
+          git commit -m "chore(docs): update readme" --author="zork-bork <${{ secrets.GIT_USER }}>" --signoff
           git pull --rebase
           git push
         env:
