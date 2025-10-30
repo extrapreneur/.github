@@ -1,3 +1,13 @@
+## [1.14.20](https://github.com/extrapreneur/.github/compare/v1.14.19...v1.14.20) (2025-10-30)
+
+### :bug: Bug Fixes
+
+* **ci:** removed step ([#208](https://github.com/extrapreneur/.github/issues/208)) ([d4cb211](https://github.com/extrapreneur/.github/commit/d4cb2111f892547657d2bf84ee4ffc7bc064836b))
+
+### :package: Maintenance
+
+* **update:** update readme ([9d5d005](https://github.com/extrapreneur/.github/commit/9d5d005e09d36dc2a0e65b88bedd0bdcfd6a67c9))
+
 ## [1.14.19](https://github.com/extrapreneur/.github/compare/v1.14.18...v1.14.19) (2025-10-30)
 
 ### :bug: Bug Fixes
