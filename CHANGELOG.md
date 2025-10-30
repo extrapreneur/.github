@@ -1,3 +1,13 @@
+## [1.14.22](https://github.com/extrapreneur/.github/compare/v1.14.21...v1.14.22) (2025-10-30)
+
+### :bug: Bug Fixes
+
+* **ci:** changed type ([b5523ca](https://github.com/extrapreneur/.github/commit/b5523ca1c0ab9312ec90f4c8ee9f7a15267a0015))
+
+### :package: Maintenance
+
+* **docs:** update readme ([d051463](https://github.com/extrapreneur/.github/commit/d05146353ae9f2e02c000ba5895d66106b67a6ea))
+
 ## [1.14.21](https://github.com/extrapreneur/.github/compare/v1.14.20...v1.14.21) (2025-10-30)
 
 ### :bug: Bug Fixes
