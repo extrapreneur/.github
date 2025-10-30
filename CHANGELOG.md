@@ -1,3 +1,13 @@
+## [1.14.13](https://github.com/extrapreneur/.github/compare/v1.14.12...v1.14.13) (2025-10-30)
+
+### :bug: Bug Fixes
+
+* **ci:** lol recursive versions ([9932ec5](https://github.com/extrapreneur/.github/commit/9932ec5f6fa85df3ac778c5a55d26b6dc8d450ef))
+
+### :package: Maintenance
+
+* **update:** update readme ([6a9e18d](https://github.com/extrapreneur/.github/commit/6a9e18d9d967915dbf88f8bc3eac05c950d068fe))
+
 ## [1.14.12](https://github.com/extrapreneur/.github/compare/v1.14.11...v1.14.12) (2025-10-30)
 
 ### :package: Maintenance

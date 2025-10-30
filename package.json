@@ -1,6 +1,6 @@
 {
   "name": "scrapy",
-  "version": "1.14.12",
+  "version": "1.14.13",
   "description": "Basic node.js app to scrape strings from a public webpage",
   "main": "app.js",
   "scripts": {
