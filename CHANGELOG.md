@@ -1,3 +1,19 @@
+## [1.14.0](https://github.com/extrapreneur/.github/compare/v1.13.0...v1.14.0) (2025-10-30)
+
+### :sparkles: New Features
+
+* **ci:** add auto pr ([#207](https://github.com/extrapreneur/.github/issues/207)) ([0e201c7](https://github.com/extrapreneur/.github/commit/0e201c7d740714a2fea8ff1b378b10db55a49ce4))
+
+### :bug: Bug Fixes
+
+* change order ([e1a106e](https://github.com/extrapreneur/.github/commit/e1a106e1786923b7d2d8c866639339b52c92bfed))
+* **ci:** change user ([0c56422](https://github.com/extrapreneur/.github/commit/0c564228f522dd78b3b27ada099e8809371c22b4))
+* **ci:** set remote origin ([94d058f](https://github.com/extrapreneur/.github/commit/94d058fce83fc9c8698d93f260f6dadc97275b75))
+
+### :package: Maintenance
+
+* **update:** update readme ([5be404d](https://github.com/extrapreneur/.github/commit/5be404d19a497cb036674a85b5bd7a2ad1af20c5))
+
 ## [1.13.0](https://github.com/extrapreneur/.github/compare/v1.12.0...v1.13.0) (2025-10-30)
 
 ### :sparkles: New Features
