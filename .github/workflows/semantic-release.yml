@@ -3,11 +3,6 @@ name: Semantic Release
 
 on:
   workflow_call:
-    secrets:
-      token:
-        required: true
-      npm_token:
-        required: true
 
 permissions:
   actions: 'read'
