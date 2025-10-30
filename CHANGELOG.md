@@ -1,3 +1,15 @@
+## [1.14.7](https://github.com/extrapreneur/.github/compare/v1.14.6...v1.14.7) (2025-10-30)
+
+### :bug: Bug Fixes
+
+* **ci:** oops, fix condition ([7f643ed](https://github.com/extrapreneur/.github/commit/7f643edd51ee9e909a7a6e26054b41805f3ea722))
+* **ci:** oops, fix condition ([fcea4c4](https://github.com/extrapreneur/.github/commit/fcea4c47954454097b268c5ef627fa7911fd1b9d))
+* **git:** sync branch ([e68ed9c](https://github.com/extrapreneur/.github/commit/e68ed9c1fa5a8b6f5645976c76ca4b474a9b84b6))
+
+### :package: Maintenance
+
+* **update:** update readme ([21471b0](https://github.com/extrapreneur/.github/commit/21471b0f9be3ad25483e58bb45646f6b84b14453))
+
 ## [1.14.6](https://github.com/extrapreneur/.github/compare/v1.14.5...v1.14.6) (2025-10-30)
 
 ### :package: Maintenance
