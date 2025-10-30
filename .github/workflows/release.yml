@@ -24,5 +24,4 @@ jobs:
     needs: [tests]
     if: ${{always() && github.event.workflow_run.conclusion == 'success'}}
     uses: ./.github/workflows/semantic-release.yml
-    secrets: 
-      token: ${{ secrets.GIT_USER_PAT }}
+    secrets: inherit

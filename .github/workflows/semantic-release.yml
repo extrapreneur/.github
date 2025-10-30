@@ -6,6 +6,8 @@ on:
     secrets:
       token:
         required: true
+      npm_token:
+        required: true
 
 permissions:
   actions: 'read'
@@ -36,7 +38,7 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: false
-          token: ${{ secrets.token }}
+          token: ${{ secrets.GIT_USER_PAT }}
 
       - name: Slugify github variables
         uses: rlespinasse/github-slug-action@ac4a3a266833ca6b6086466a921fae9f3c671596
@@ -52,7 +54,8 @@ jobs:
             @semantic-release/exec@7.0.2
             conventional-changelog-conventionalcommits@8.0.0
         env:
-          GITHUB_TOKEN: ${{ secrets.token }}
+          GITHUB_TOKEN: ${{ secrets.GIT_USER_PAT }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Success summary
         if: ${{ steps.semantic-release.outputs.new_release_published == 'true' }}
