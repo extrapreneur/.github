@@ -1,3 +1,13 @@
+## [1.14.1](https://github.com/extrapreneur/.github/compare/v1.14.0...v1.14.1) (2025-10-30)
+
+### :bug: Bug Fixes
+
+* **git:** sync branch ([f5ca85c](https://github.com/extrapreneur/.github/commit/f5ca85cb6d566cef1bdd1e65c3ef4dcc4d52ecdf))
+
+### :package: Maintenance
+
+* **update:** update readme ([2b819ab](https://github.com/extrapreneur/.github/commit/2b819abfadeaa94531633b93d9e90039e963d0f4))
+
 ## [1.14.0](https://github.com/extrapreneur/.github/compare/v1.13.0...v1.14.0) (2025-10-30)
 
 ### :sparkles: New Features
