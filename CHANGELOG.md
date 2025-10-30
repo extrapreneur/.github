@@ -1,3 +1,34 @@
+## [1.13.0](https://github.com/extrapreneur/.github/compare/v1.12.0...v1.13.0) (2025-10-30)
+
+### :sparkles: New Features
+
+* add owner variable ([6707ad3](https://github.com/extrapreneur/.github/commit/6707ad30c13850b1f129cd5a98d52c5bf2bb5e48))
+
+### :bug: Bug Fixes
+
+* add npm plugin ([#188](https://github.com/extrapreneur/.github/issues/188)) ([f2d7a0e](https://github.com/extrapreneur/.github/commit/f2d7a0e66cf0aa3f116ac03bcc30bbd578c71325))
+* **ci:** pass npm token ([2d776a2](https://github.com/extrapreneur/.github/commit/2d776a222467ed82911cb3d724e461d84ae32f08))
+* **ci:** pass release token ([#205](https://github.com/extrapreneur/.github/issues/205)) ([c68b3ba](https://github.com/extrapreneur/.github/commit/c68b3ba6f9840a2d498773343833a0b7dd2986ff))
+* **ci:** removed input token ([#203](https://github.com/extrapreneur/.github/issues/203)) ([3fda1e3](https://github.com/extrapreneur/.github/commit/3fda1e3a5d011a8026470f46e25beeded56dcf6d))
+* lint errors ([#186](https://github.com/extrapreneur/.github/issues/186)) ([8b70312](https://github.com/extrapreneur/.github/commit/8b703128622bb9760c1c6bfc43a3f7eb5759f6a3))
+
+### :package: Maintenance
+
+* **deps:** bump actions/setup-node from 5.0.0 to 6.0.0 ([#195](https://github.com/extrapreneur/.github/issues/195)) ([bb9ac86](https://github.com/extrapreneur/.github/commit/bb9ac86509a4f875e9362df6dc6e344ac0094bcb))
+* **deps:** bump cycjimmy/semantic-release-action from 5.0.0 to 5.0.2 ([#190](https://github.com/extrapreneur/.github/issues/190)) ([f10f05a](https://github.com/extrapreneur/.github/commit/f10f05aaccebc2c2cef977bb37caadaa630a18b2))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.169 to 2.0.170 ([#187](https://github.com/extrapreneur/.github/issues/187)) ([075f4db](https://github.com/extrapreneur/.github/commit/075f4db541a53cc52b9a1d3b9fdc616dc193bbac))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.170 to 2.0.173 ([#191](https://github.com/extrapreneur/.github/issues/191)) ([1dd1407](https://github.com/extrapreneur/.github/commit/1dd1407373e66dbf1ec5bad5d1ddf551c76759df))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.173 to 2.0.174 ([#196](https://github.com/extrapreneur/.github/issues/196)) ([0a3dc11](https://github.com/extrapreneur/.github/commit/0a3dc112a74a9b9432fd2869c3c4518941b92c93))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.174 to 2.0.176 ([#200](https://github.com/extrapreneur/.github/issues/200)) ([ef0906d](https://github.com/extrapreneur/.github/commit/ef0906dfd9a43e02dd8d9591bf2cab88914aa64b))
+* **deps:** bump puppeteer from 24.23.0 to 24.24.0 ([#189](https://github.com/extrapreneur/.github/issues/189)) ([d82811b](https://github.com/extrapreneur/.github/commit/d82811b784892dea28d25044037ce5d07a2b850d))
+* **deps:** bump puppeteer from 24.24.0 to 24.24.1 ([#192](https://github.com/extrapreneur/.github/issues/192)) ([6b2e6fd](https://github.com/extrapreneur/.github/commit/6b2e6fda7f2fcf83cb986846df3f0604809bdd17))
+* **deps:** bump puppeteer from 24.24.1 to 24.25.0 ([#193](https://github.com/extrapreneur/.github/issues/193)) ([04474c2](https://github.com/extrapreneur/.github/commit/04474c2b023f76eb0212bcf157bb23fda3463ea0))
+* **deps:** bump puppeteer from 24.25.0 to 24.26.0 ([#197](https://github.com/extrapreneur/.github/issues/197)) ([310241d](https://github.com/extrapreneur/.github/commit/310241da4a05bbabc0510523cd0917096fad46eb))
+* **deps:** bump puppeteer from 24.26.0 to 24.26.1 ([#198](https://github.com/extrapreneur/.github/issues/198)) ([2c21ce0](https://github.com/extrapreneur/.github/commit/2c21ce0ddfed4bcef541a28cfbb9f377caf96f48))
+* **deps:** bump puppeteer from 24.26.1 to 24.27.0 ([#201](https://github.com/extrapreneur/.github/issues/201)) ([5a2dc0a](https://github.com/extrapreneur/.github/commit/5a2dc0a267301fbe577d98e6d1b8a8f4b9211094))
+* **deps:** bump rlespinasse/github-slug-action from 5.2.0 to 5.3.0 ([#194](https://github.com/extrapreneur/.github/issues/194)) ([37822c4](https://github.com/extrapreneur/.github/commit/37822c41be84b05f107fd2d9bbb414728968230c))
+* **deps:** bump turndown from 7.2.1 to 7.2.2 ([#199](https://github.com/extrapreneur/.github/issues/199)) ([b54b65f](https://github.com/extrapreneur/.github/commit/b54b65f87fd92572b7ddc8cb4e0213853e49a814))
+
 ## [1.12.0](https://github.com/extrapreneur/.github/compare/v1.11.3...v1.12.0) (2025-10-02)
 
 ### :sparkles: New Features
