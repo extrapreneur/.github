@@ -3,6 +3,9 @@ name: Semantic Release
 
 on:
   workflow_call:
+    secrets:
+      token:
+        required: true
 
 permissions:
   actions: 'read'
@@ -32,7 +35,8 @@ jobs:
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
         with:
           fetch-depth: 0
-          token: ${{ secrets.GIT_USER_PAT }}
+          persist-credentials: false
+          token: ${{ secrets.token }}
 
       - name: Slugify github variables
         uses: rlespinasse/github-slug-action@ac4a3a266833ca6b6086466a921fae9f3c671596
@@ -48,7 +52,7 @@ jobs:
             @semantic-release/exec@7.0.2
             conventional-changelog-conventionalcommits@8.0.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GIT_USER_PAT }}
+          GITHUB_TOKEN: ${{ secrets.token }}
 
       - name: Success summary
         if: ${{ steps.semantic-release.outputs.new_release_published == 'true' }}
