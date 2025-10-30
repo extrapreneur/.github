@@ -18,6 +18,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8
+        with:
+          fetch-depth: 0
+          persist-credentials: false
 
       - name: Disable AppArmor
         run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
