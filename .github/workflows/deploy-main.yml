@@ -62,10 +62,10 @@ jobs:
           git add .
           if git diff-index --quiet HEAD --; then
             echo "No changes to commit"
-            exit 0
+          else
+            git commit -m "chore(update): update readme" --author="zork-bork <${{ secrets.GIT_USER }}>" --signoff
+            git pull --rebase
+            git push
           fi
-          git commit -m "chore(update): update readme" --author="zork-bork <${{ secrets.GIT_USER }}>" --signoff
-          git pull --rebase
-          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_USER_PAT }}
