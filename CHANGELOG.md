@@ -1,3 +1,45 @@
+## [1.14.12](https://github.com/extrapreneur/.github/compare/v1.14.11...v1.14.12) (2025-10-30)
+
+### :package: Maintenance
+
+* **update:** update readme ([ec28a0c](https://github.com/extrapreneur/.github/commit/ec28a0cdb441afb1c8d0b39ad4a6e90d58e85c62))
+
+## [1.14.11](https://github.com/extrapreneur/.github/compare/v1.14.10...v1.14.11) (2025-10-30)
+
+### :package: Maintenance
+
+* **update:** update readme ([9d494d9](https://github.com/extrapreneur/.github/commit/9d494d922e3bbb0ccc3915c41925af3237fc894b))
+
+## [1.14.10](https://github.com/extrapreneur/.github/compare/v1.14.9...v1.14.10) (2025-10-30)
+
+### :package: Maintenance
+
+* **update:** update readme ([8227c30](https://github.com/extrapreneur/.github/commit/8227c30a8c74305ef5d5d4ffb54d2616652cd30f))
+
+## [1.14.9](https://github.com/extrapreneur/.github/compare/v1.14.8...v1.14.9) (2025-10-30)
+
+### :package: Maintenance
+
+* **update:** update readme ([1ae7897](https://github.com/extrapreneur/.github/commit/1ae7897f51b060707afe50c156dea82633b36b02))
+
+## [1.14.8](https://github.com/extrapreneur/.github/compare/v1.14.7...v1.14.8) (2025-10-30)
+
+### :package: Maintenance
+
+* **update:** update readme ([a63f341](https://github.com/extrapreneur/.github/commit/a63f341037420ac2718937ab0e21bf0d1459510f))
+
+## [1.14.7](https://github.com/extrapreneur/.github/compare/v1.14.6...v1.14.7) (2025-10-30)
+
+### :bug: Bug Fixes
+
+* **ci:** oops, fix condition ([7f643ed](https://github.com/extrapreneur/.github/commit/7f643edd51ee9e909a7a6e26054b41805f3ea722))
+* **ci:** oops, fix condition ([fcea4c4](https://github.com/extrapreneur/.github/commit/fcea4c47954454097b268c5ef627fa7911fd1b9d))
+* **git:** sync branch ([e68ed9c](https://github.com/extrapreneur/.github/commit/e68ed9c1fa5a8b6f5645976c76ca4b474a9b84b6))
+
+### :package: Maintenance
+
+* **update:** update readme ([21471b0](https://github.com/extrapreneur/.github/commit/21471b0f9be3ad25483e58bb45646f6b84b14453))
+
 ## [1.14.6](https://github.com/extrapreneur/.github/compare/v1.14.5...v1.14.6) (2025-10-30)
 
 ### :package: Maintenance
