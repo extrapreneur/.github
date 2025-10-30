@@ -3,6 +3,8 @@ name: Deploy main
 on:
   workflow_dispatch:
   push:
+    tags-ignore:
+      - '*'
     paths:
       - 'profile/README.md'
 
