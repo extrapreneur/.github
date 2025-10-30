@@ -1,3 +1,13 @@
+## [1.14.21](https://github.com/extrapreneur/.github/compare/v1.14.20...v1.14.21) (2025-10-30)
+
+### :bug: Bug Fixes
+
+* **ci:** ignore tags ([f3b65ea](https://github.com/extrapreneur/.github/commit/f3b65ea0bf27560a45cf11c0d0b2353b2c65877c))
+
+### :package: Maintenance
+
+* **update:** update readme ([9791671](https://github.com/extrapreneur/.github/commit/9791671fcd9c8555f7f7578ddde9f783ab8a7008))
+
 ## [1.14.20](https://github.com/extrapreneur/.github/compare/v1.14.19...v1.14.20) (2025-10-30)
 
 ### :bug: Bug Fixes
