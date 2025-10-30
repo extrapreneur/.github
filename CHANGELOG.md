@@ -1,3 +1,13 @@
+## [1.14.19](https://github.com/extrapreneur/.github/compare/v1.14.18...v1.14.19) (2025-10-30)
+
+### :bug: Bug Fixes
+
+* **ci:** act like and adult and fix it ([dd04455](https://github.com/extrapreneur/.github/commit/dd04455dee11649dd2770a9b586ea6fc962adca7))
+
+### :package: Maintenance
+
+* **update:** update readme ([38ed4b6](https://github.com/extrapreneur/.github/commit/38ed4b6c09213737254282a707155f0ee61bef54))
+
 ## [1.14.18](https://github.com/extrapreneur/.github/compare/v1.14.17...v1.14.18) (2025-10-30)
 
 ### :package: Maintenance
