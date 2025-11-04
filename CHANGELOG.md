@@ -1,3 +1,15 @@
+## [1.15.0](https://github.com/extrapreneur/.github/compare/v1.14.23...v1.15.0) (2025-11-04)
+
+### :sparkles: New Features
+
+* remove git stream ([#212](https://github.com/extrapreneur/.github/issues/212)) ([5c01de3](https://github.com/extrapreneur/.github/commit/5c01de34146622ae1ac2346475929bac97ac59e6))
+
+### :package: Maintenance
+
+* **deps:** bump @octokit/rest from 22.0.0 to 22.0.1 ([#210](https://github.com/extrapreneur/.github/issues/210)) ([231d926](https://github.com/extrapreneur/.github/commit/231d926aa1f9a108d8c6754a75e376f93e2349c6))
+* **deps:** bump linear-b/gitstream-github-action from 2.0.176 to 2.0.178 ([#211](https://github.com/extrapreneur/.github/issues/211)) ([ed2b893](https://github.com/extrapreneur/.github/commit/ed2b893deb1305a43f6cbbf21a3d8b7f401ec0aa))
+* **deps:** bump puppeteer from 24.27.0 to 24.28.0 ([#213](https://github.com/extrapreneur/.github/issues/213)) ([32ee924](https://github.com/extrapreneur/.github/commit/32ee924273f2cf945c82f0f536f9f00e8d7af652))
+
 ## [1.14.23](https://github.com/extrapreneur/.github/compare/v1.14.22...v1.14.23) (2025-10-30)
 
 ### :package: Maintenance
