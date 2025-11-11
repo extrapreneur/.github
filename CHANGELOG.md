@@ -1,3 +1,10 @@
+## [1.15.2](https://github.com/extrapreneur/.github/compare/v1.15.1...v1.15.2) (2025-11-11)
+
+### :package: Maintenance
+
+* change registry to github ([#218](https://github.com/extrapreneur/.github/issues/218)) ([fc22954](https://github.com/extrapreneur/.github/commit/fc229541f5498d0256f750568c5f87052682288e))
+* **docs:** update readme ([dfc2fd7](https://github.com/extrapreneur/.github/commit/dfc2fd7b0450c1bb72de8a05bb182c75a17d794e))
+
 ## [1.15.1](https://github.com/extrapreneur/.github/compare/v1.15.0...v1.15.1) (2025-11-11)
 
 ### :package: Maintenance
