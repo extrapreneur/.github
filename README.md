@@ -11,43 +11,6 @@
 - [gh-cli](https://github.com/cli/cli?tab=readme-ov-file#installation)
 - [Node JS](https://nodejs.org/en/download/package-manager)
 
-## Requirements
-
-Personal access token is required when querying the GitHub API to get members from a GitHub organisation using [Octokit](https://github.com/octokit).
-
-Scopes needs at least required on PAT is `read:org`
-
-`OWNER` environment variable is the repository owner's username or organisation name. 
-
-**Example:** octocat or octoorg.
-
-### How to create a personal access token
-
-[Creating secrets for a repository](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets#creating-secrets-for-a-repository) using your own personal access token set as environment variable `TOKEN`  
-`OWNER` environment variable is the owner of the repository.
-
-#### Running app on a local machine
-
-```shell
-export TOKEN=your-personal-access-token
-export OWNER=your-github-organisation
-```
-
-#### Running app in a GitHub action with a workflow
-
-`github.repository_owner` return the owner of the repository, see [GitHub context: repository_owner](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#github-context)
-
-```yaml
-jobs:
-  run-node-js-app:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Add PAT and run node js
-        env:
-          TOKEN: ${{ secrets.TOKEN }}
-          OWNER: ${{ github.repository_owner }}
-```
-
 ## Install
 
 1. Clone repository
@@ -90,11 +53,4 @@ Tests:
 
 ```bash
 npm run test
-```
-
-## Cleanup environment variables after use
-
-```bash
-unset TOKEN
-unset OWNER
 ```
