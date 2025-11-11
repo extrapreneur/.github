@@ -1,3 +1,13 @@
+## [1.17.0](https://github.com/extrapreneur/.github/compare/v1.16.0...v1.17.0) (2025-11-11)
+
+### :sparkles: New Features
+
+* simplify readme ([#220](https://github.com/extrapreneur/.github/issues/220)) ([8ec6211](https://github.com/extrapreneur/.github/commit/8ec621188b9e158b08c4d038bd117d69630459ab))
+
+### :package: Maintenance
+
+* **docs:** update readme ([55b2314](https://github.com/extrapreneur/.github/commit/55b2314c666ac3023199f99f328edbae36d27e27))
+
 ## [1.16.0](https://github.com/extrapreneur/.github/compare/v1.15.4...v1.16.0) (2025-11-11)
 
 ### :sparkles: New Features
