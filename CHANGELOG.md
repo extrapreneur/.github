@@ -1,3 +1,13 @@
+## [1.16.0](https://github.com/extrapreneur/.github/compare/v1.15.4...v1.16.0) (2025-11-11)
+
+### :sparkles: New Features
+
+* publish to github pkg registry ([#219](https://github.com/extrapreneur/.github/issues/219)) ([f34e322](https://github.com/extrapreneur/.github/commit/f34e3227d15a54b7f405bbeefcf2570585c96a56))
+
+### :package: Maintenance
+
+* **docs:** update readme ([5e97719](https://github.com/extrapreneur/.github/commit/5e97719c7cc58a78b2a12a0d9d36167d3e2c09d2))
+
 ## [1.15.4](https://github.com/extrapreneur/.github/compare/v1.15.3...v1.15.4) (2025-11-11)
 
 ### :package: Maintenance
