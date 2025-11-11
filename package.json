@@ -1,6 +1,6 @@
 {
   "name": "ext-scrapy",
-  "version": "1.15.0",
+  "version": "1.15.1",
   "description": "Basic node.js app to scrape strings from a public webpage",
   "main": "app.js",
   "scripts": {
