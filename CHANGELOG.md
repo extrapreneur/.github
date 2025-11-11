@@ -1,3 +1,9 @@
+## [1.15.4](https://github.com/extrapreneur/.github/compare/v1.15.3...v1.15.4) (2025-11-11)
+
+### :package: Maintenance
+
+* **docs:** update readme ([140ddf6](https://github.com/extrapreneur/.github/commit/140ddf6838634c7f2da9c2c7ce1aa6cec9d3de93))
+
 ## [1.15.3](https://github.com/extrapreneur/.github/compare/v1.15.2...v1.15.3) (2025-11-11)
 
 ### :package: Maintenance
