@@ -50,7 +50,7 @@ jobs:
             conventional-changelog-conventionalcommits@8.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_USER_PAT }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.GIT_USER_PAT }}
 
       - name: Success summary
         if: ${{ steps.semantic-release.outputs.new_release_published == 'true' }}
