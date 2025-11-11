@@ -1,6 +1,6 @@
 {
   "name": "@extrapreneur/ext-scrapy",
-  "version": "1.15.2",
+  "version": "1.15.3",
   "description": "Basic node.js app to scrape strings from a public webpage",
   "main": "app.js",
   "scripts": {
