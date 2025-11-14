@@ -1,3 +1,9 @@
+## [1.17.1](https://github.com/extrapreneur/.github/compare/v1.17.0...v1.17.1) (2025-11-14)
+
+### :package: Maintenance
+
+* **deps:** bump puppeteer from 24.29.1 to 24.30.0 ([#221](https://github.com/extrapreneur/.github/issues/221)) ([bb75b79](https://github.com/extrapreneur/.github/commit/bb75b79f3b51f167acb97278235d0524d346de40))
+
 ## [1.17.0](https://github.com/extrapreneur/.github/compare/v1.16.0...v1.17.0) (2025-11-11)
 
 ### :sparkles: New Features
