@@ -1,3 +1,12 @@
+## [1.17.2](https://github.com/extrapreneur/.github/compare/v1.17.1...v1.17.2) (2025-11-19)
+
+### :package: Maintenance
+
+* **deps-dev:** bump glob from 11.0.3 to 11.1.0 in the npm_and_yarn group across 1 directory ([#224](https://github.com/extrapreneur/.github/issues/224)) ([983584f](https://github.com/extrapreneur/.github/commit/983584f1bf85897e43b397905a5b593851b4c03e))
+* **deps-dev:** bump glob from 11.0.3 to 12.0.0 ([#223](https://github.com/extrapreneur/.github/issues/223)) ([59b8fe8](https://github.com/extrapreneur/.github/commit/59b8fe86df240490f7105fa38b4c213bb42cdbb4))
+* **deps-dev:** bump glob from 11.1.0 to 12.0.0 ([#225](https://github.com/extrapreneur/.github/issues/225)) ([d9dd547](https://github.com/extrapreneur/.github/commit/d9dd54797ffa359ef7eeeb2e70c1ac9d03334854))
+* **deps:** bump the npm_and_yarn group across 1 directory with 1 update ([#222](https://github.com/extrapreneur/.github/issues/222)) ([c4a1a52](https://github.com/extrapreneur/.github/commit/c4a1a52254846216006d5bd9a76ec3ec67374027))
+
 ## [1.17.1](https://github.com/extrapreneur/.github/compare/v1.17.0...v1.17.1) (2025-11-14)
 
 ### :package: Maintenance
