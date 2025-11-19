@@ -1,3 +1,9 @@
+## [1.17.3](https://github.com/extrapreneur/.github/compare/v1.17.2...v1.17.3) (2025-11-19)
+
+### :bug: Bug Fixes
+
+* bump glob to fix CVE-2025-64756 ([#226](https://github.com/extrapreneur/.github/issues/226)) ([6db9ca7](https://github.com/extrapreneur/.github/commit/6db9ca7192b5e8d28b0171276573730481c63915))
+
 ## [1.17.2](https://github.com/extrapreneur/.github/compare/v1.17.1...v1.17.2) (2025-11-19)
 
 ### :package: Maintenance
