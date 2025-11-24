@@ -1,3 +1,11 @@
+## [1.17.5](https://github.com/extrapreneur/.github/compare/v1.17.4...v1.17.5) (2025-11-24)
+
+### :package: Maintenance
+
+* **deps:** bump actions/checkout from 5.0.0 to 6.0.0 ([#229](https://github.com/extrapreneur/.github/issues/229)) ([711c0b9](https://github.com/extrapreneur/.github/commit/711c0b9ba4d6ff43950a078f53ed90e3a5d6b004))
+* **deps:** bump cycjimmy/semantic-release-action from 5.0.2 to 6.0.0 ([#230](https://github.com/extrapreneur/.github/issues/230)) ([317b115](https://github.com/extrapreneur/.github/commit/317b1155bb39fb9dcd835667217a4026cef10598))
+* **docs:** update readme ([5163be2](https://github.com/extrapreneur/.github/commit/5163be25f9d0b94ede5e063ea0f43d087499be0b))
+
 ## [1.17.4](https://github.com/extrapreneur/.github/compare/v1.17.3...v1.17.4) (2025-11-21)
 
 ### :package: Maintenance
