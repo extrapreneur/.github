@@ -79,19 +79,25 @@ We strive to impress our customers and create proud employees. Our team of speci
                 <sub><b>joakim-extrapreneur</b></sub>
               </a>
             </td><td align="center" style="padding: 10px;">
+              <a href="https://github.com/Mangelinho" style="text-decoration: none; color: inherit;">
+                <img src="https://avatars.githubusercontent.com/u/86794841?v=4" width="80" height="80" alt="Mangelinho" style="border-radius: 50%;"/>
+                <br />
+                <sub><b>Mangelinho</b></sub>
+              </a>
+            </td><td align="center" style="padding: 10px;">
               <a href="https://github.com/PeterThorn" style="text-decoration: none; color: inherit;">
                 <img src="https://avatars.githubusercontent.com/u/59649922?v=4" width="80" height="80" alt="PeterThorn" style="border-radius: 50%;"/>
                 <br />
                 <sub><b>PeterThorn</b></sub>
               </a>
-            </td><td align="center" style="padding: 10px;">
+            </td></tr>
+<tr><td align="center" style="padding: 10px;">
               <a href="https://github.com/psilore" style="text-decoration: none; color: inherit;">
                 <img src="https://avatars.githubusercontent.com/u/366256?v=4" width="80" height="80" alt="psilore" style="border-radius: 50%;"/>
                 <br />
                 <sub><b>psilore</b></sub>
               </a>
-            </td></tr>
-<tr><td align="center" style="padding: 10px;">
+            </td><td align="center" style="padding: 10px;">
               <a href="https://github.com/StaffanSegel" style="text-decoration: none; color: inherit;">
                 <img src="https://avatars.githubusercontent.com/u/207986833?v=4" width="80" height="80" alt="StaffanSegel" style="border-radius: 50%;"/>
                 <br />
