@@ -1,3 +1,11 @@
+## [1.17.6](https://github.com/extrapreneur/.github/compare/v1.17.5...v1.17.6) (2025-12-01)
+
+### :package: Maintenance
+
+* **deps:** bump rlespinasse/github-slug-action from 5.3.0 to 5.4.0 ([#232](https://github.com/extrapreneur/.github/issues/232)) ([b7ed498](https://github.com/extrapreneur/.github/commit/b7ed49872a5cfb4d474b06a186cbe6a1aa82a270))
+* **docs:** update readme ([ba91fa6](https://github.com/extrapreneur/.github/commit/ba91fa6215327ea1170679f4169dbfd3f3b18598))
+* update readme ([#231](https://github.com/extrapreneur/.github/issues/231)) ([bf31109](https://github.com/extrapreneur/.github/commit/bf3110948a5d6f4b0eac3753bc40fae253cce667))
+
 ## [1.17.5](https://github.com/extrapreneur/.github/compare/v1.17.4...v1.17.5) (2025-11-24)
 
 ### :package: Maintenance
