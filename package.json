@@ -1,6 +1,6 @@
 {
   "name": "@extrapreneur/ext-scrapy",
-  "version": "1.17.6",
+  "version": "1.17.7",
   "description": "Basic node.js app to scrape strings from a public webpage",
   "repository": {
     "type": "git",
