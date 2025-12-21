@@ -6,6 +6,8 @@
 
 📖 A simple node js application that scrapes an element and a list of urls, then replaces sections in [profile/README.md](./profile/README.md) from a page on the internet.
 
+> **Note:** As of December 2025, scraping functionality is disabled due to changes on https://extrapreneur.se. Scraping will be restored if/when the homepage provides usable data again. The public profile/README.md does not reflect this change.
+
 ## Prerequisites
 
 - [gh-cli](https://github.com/cli/cli?tab=readme-ov-file#installation)

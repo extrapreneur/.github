@@ -165,6 +165,10 @@ async function updateContributorsSection() {
   } catch (error) {
     console.error("Error updating contributors section:", error);
   }
+scrape();
 }
 
-scrape();
+// --- SCRAPING DISABLED ---
+// The scraping functionality is currently disabled due to homepage changes (Dec 2025).
+// To re-enable, uncomment the line below and ensure the homepage provides usable data.
+// scrape();
