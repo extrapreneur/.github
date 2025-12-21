@@ -1,3 +1,15 @@
+## [1.18.0](https://github.com/extrapreneur/.github/compare/v1.17.9...v1.18.0) (2025-12-21)
+
+### :sparkles: New Features
+
+* add mass deploy and release ([fbaf54d](https://github.com/extrapreneur/.github/commit/fbaf54d6eb7f43e24762162d999fa3b249089c7d))
+* dismantle scraping capabillities ([#241](https://github.com/extrapreneur/.github/issues/241)) ([9d54bd4](https://github.com/extrapreneur/.github/commit/9d54bd4619554a249c5e8e3985caa9ddcddba657))
+
+### :package: Maintenance
+
+* **deps:** bump puppeteer from 24.33.0 to 24.33.1 ([#239](https://github.com/extrapreneur/.github/issues/239)) ([9e7b812](https://github.com/extrapreneur/.github/commit/9e7b812f23239854d5362036f5fa920ea2f948ba))
+* **docs:** update readme ([43bf673](https://github.com/extrapreneur/.github/commit/43bf673859364b20b4bf7cfff4c632a0740894dc))
+
 ## [1.17.9](https://github.com/extrapreneur/.github/compare/v1.17.8...v1.17.9) (2025-12-15)
 
 ### :package: Maintenance
