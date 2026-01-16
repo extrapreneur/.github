@@ -1,3 +1,9 @@
+## [1.18.7](https://github.com/extrapreneur/.github/compare/v1.18.6...v1.18.7) (2026-01-16)
+
+### :package: Maintenance
+
+* **deps:** bump puppeteer from 24.34.0 to 24.35.0 ([#243](https://github.com/extrapreneur/.github/issues/243)) ([f981c60](https://github.com/extrapreneur/.github/commit/f981c60bb2610aadf6145a230b09499f2b543bb0))
+
 ## [1.18.6](https://github.com/extrapreneur/.github/compare/v1.18.5...v1.18.6) (2026-01-12)
 
 ### :package: Maintenance
