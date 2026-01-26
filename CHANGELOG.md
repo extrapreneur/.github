@@ -1,3 +1,10 @@
+## [1.18.9](https://github.com/extrapreneur/.github/compare/v1.18.8...v1.18.9) (2026-01-26)
+
+### :package: Maintenance
+
+* **deps:** bump actions/checkout from 6.0.1 to 6.0.2 ([#246](https://github.com/extrapreneur/.github/issues/246)) ([0c657d3](https://github.com/extrapreneur/.github/commit/0c657d3201041879e89220b481f331533f395e1c))
+* **deps:** bump puppeteer from 24.35.0 to 24.36.0 ([#245](https://github.com/extrapreneur/.github/issues/245)) ([4dcbd39](https://github.com/extrapreneur/.github/commit/4dcbd395b7681b8adf99ea13ac256c16d316650d))
+
 ## [1.18.8](https://github.com/extrapreneur/.github/compare/v1.18.7...v1.18.8) (2026-01-20)
 
 ### :package: Maintenance
