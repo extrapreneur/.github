@@ -1,3 +1,10 @@
+## [1.18.14](https://github.com/extrapreneur/.github/compare/v1.18.13...v1.18.14) (2026-02-09)
+
+### :package: Maintenance
+
+* **deps:** bump puppeteer from 24.37.1 to 24.37.2 ([#250](https://github.com/extrapreneur/.github/issues/250)) ([3fad443](https://github.com/extrapreneur/.github/commit/3fad4431f9753a2a11e36c4c53d19a00b6d53cdf))
+* **deps:** bump rlespinasse/github-slug-action from 5.4.0 to 5.5.0 ([#251](https://github.com/extrapreneur/.github/issues/251)) ([50436d7](https://github.com/extrapreneur/.github/commit/50436d77b80d5a46ed6367155a4b57527f191d15))
+
 ## [1.18.13](https://github.com/extrapreneur/.github/compare/v1.18.12...v1.18.13) (2026-02-08)
 
 ### :package: Maintenance
