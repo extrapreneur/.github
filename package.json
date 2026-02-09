@@ -16,7 +16,7 @@
   "type": "module",
   "dependencies": {
     "@octokit/rest": "^22.0.0",
-    "puppeteer": "^24.37.1",
+    "puppeteer": "^24.37.2",
     "turndown": "^7.2.2"
   },
   "devDependencies": {
