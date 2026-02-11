@@ -1,3 +1,9 @@
+## [1.18.15](https://github.com/extrapreneur/.github/compare/v1.18.14...v1.18.15) (2026-02-11)
+
+### :package: Maintenance
+
+* **deps-dev:** bump glob from 13.0.1 to 13.0.2 ([#252](https://github.com/extrapreneur/.github/issues/252)) ([969d957](https://github.com/extrapreneur/.github/commit/969d95743d5265cab6aafa028d595091fdcbcaa1))
+
 ## [1.18.14](https://github.com/extrapreneur/.github/compare/v1.18.13...v1.18.14) (2026-02-09)
 
 ### :package: Maintenance
