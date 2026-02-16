@@ -1,3 +1,10 @@
+## [1.18.16](https://github.com/extrapreneur/.github/compare/v1.18.15...v1.18.16) (2026-02-16)
+
+### :package: Maintenance
+
+* **deps-dev:** bump glob from 13.0.2 to 13.0.3 ([#253](https://github.com/extrapreneur/.github/issues/253)) ([33fd3b2](https://github.com/extrapreneur/.github/commit/33fd3b203742fcf9180ef1e13334c707ee08c920))
+* **deps:** bump puppeteer from 24.37.2 to 24.37.3 ([#254](https://github.com/extrapreneur/.github/issues/254)) ([b97d2d5](https://github.com/extrapreneur/.github/commit/b97d2d52e3032f4fe0d015e37ecebb10c739c6c1))
+
 ## [1.18.15](https://github.com/extrapreneur/.github/compare/v1.18.14...v1.18.15) (2026-02-11)
 
 ### :package: Maintenance
