@@ -1,3 +1,9 @@
+## [1.18.19](https://github.com/extrapreneur/.github/compare/v1.18.18...v1.18.19) (2026-02-23)
+
+### :package: Maintenance
+
+* **docs:** update readme ([53f3ab0](https://github.com/extrapreneur/.github/commit/53f3ab041fde30ce8f18b3605ff40ac34e4f5df8))
+
 ## [1.18.18](https://github.com/extrapreneur/.github/compare/v1.18.17...v1.18.18) (2026-02-22)
 
 ### :package: Maintenance
