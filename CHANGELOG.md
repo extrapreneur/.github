@@ -1,3 +1,9 @@
+## [1.18.21](https://github.com/extrapreneur/.github/compare/v1.18.20...v1.18.21) (2026-02-26)
+
+### :package: Maintenance
+
+* **deps:** bump basic-ftp from 5.1.0 to 5.2.0 in the npm_and_yarn group across 1 directory ([#259](https://github.com/extrapreneur/.github/issues/259)) ([5cf887d](https://github.com/extrapreneur/.github/commit/5cf887d7f6a69ec06130f121afc3e9f158a75060))
+
 ## [1.18.20](https://github.com/extrapreneur/.github/compare/v1.18.19...v1.18.20) (2026-02-24)
 
 ### :package: Maintenance
