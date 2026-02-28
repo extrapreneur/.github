@@ -1,3 +1,9 @@
+## [1.18.22](https://github.com/extrapreneur/.github/compare/v1.18.21...v1.18.22) (2026-02-28)
+
+### :package: Maintenance
+
+* **deps:** bump the npm_and_yarn group across 1 directory with 1 update ([#260](https://github.com/extrapreneur/.github/issues/260)) ([ed11ab9](https://github.com/extrapreneur/.github/commit/ed11ab990cf5b8e86047d04f5a24bd8ab34c4ed6))
+
 ## [1.18.21](https://github.com/extrapreneur/.github/compare/v1.18.20...v1.18.21) (2026-02-26)
 
 ### :package: Maintenance
