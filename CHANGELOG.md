@@ -1,3 +1,10 @@
+## [1.18.26](https://github.com/extrapreneur/.github/compare/v1.18.25...v1.18.26) (2026-03-09)
+
+### :package: Maintenance
+
+* **deps:** bump actions/setup-node from 6.2.0 to 6.3.0 ([#262](https://github.com/extrapreneur/.github/issues/262)) ([b757ac6](https://github.com/extrapreneur/.github/commit/b757ac6996aca72fcb22400698c1356b21f1da50))
+* **docs:** update readme ([947d95f](https://github.com/extrapreneur/.github/commit/947d95fb87f52254cc97dcc990ac11dc3a7bc04f))
+
 ## [1.18.25](https://github.com/extrapreneur/.github/compare/v1.18.24...v1.18.25) (2026-03-05)
 
 ### :package: Maintenance
