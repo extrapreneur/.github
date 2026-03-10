@@ -1,3 +1,9 @@
+## [1.18.27](https://github.com/extrapreneur/.github/compare/v1.18.26...v1.18.27) (2026-03-10)
+
+### :package: Maintenance
+
+* **deps-dev:** bump jest from 30.2.0 to 30.3.0 ([#263](https://github.com/extrapreneur/.github/issues/263)) ([dd36715](https://github.com/extrapreneur/.github/commit/dd367157dcf4fbe2d0736eaf50f59464f1e22464))
+
 ## [1.18.26](https://github.com/extrapreneur/.github/compare/v1.18.25...v1.18.26) (2026-03-09)
 
 ### :package: Maintenance
